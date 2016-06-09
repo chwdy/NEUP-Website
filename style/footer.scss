@@ -31,9 +31,9 @@ $red: #f00;
   margin: 0;
 
   text-align: center;
-  padding-top: 12px;
+  padding-top: 0.5%;
   //padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0.5%;
   padding-left: 10px;
 }
 .footer-link{
@@ -41,8 +41,8 @@ $red: #f00;
 
   display: inline;
   font-size: 15px;
-  padding-bottom: 4px;
-  padding-top: 12px;
+  padding-bottom: 4%;
+  padding-top: 8%;
 
   text-align: center;
   width: 70%;
@@ -56,10 +56,10 @@ $red: #f00;
 
 .footer-info{
   text-align: center;
-  padding-top: 3px;
+  padding-top: 3%;
   //margin-top: 3px;
   //margin-left: 8px;
-  padding-bottom: 2px;
+  padding-bottom: 0;
   //display: inline-block;
   font-size: 5px;
   color: white;
@@ -81,9 +81,10 @@ $red: #f00;
   text-align: center;
   //display: inline;
   //font-size: 5px;
+  margin-bottom: 1%;
   color: white;
 
-  margin: 0;
+
   padding: 0;
 
 
@@ -96,7 +97,7 @@ $red: #f00;
 
     //vertical-align: top;
     //margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 0;
     text-align: center;
     font-size: 12px;
     //line-height: 100%;
@@ -138,6 +139,7 @@ $red: #f00;
     .content {
       list-style: none;
       display: inline;
+      margin-top: 0;
       margin-left: 3%;
       margin-right: 3%;
       padding: 0;
@@ -173,7 +175,7 @@ $red: #f00;
 @media only screen and (max-width: 480px){
   .footer{
     border: solid 1px red;
-    height: 23%;
+    height: 40%;
     width: 100%;
     background-color: $background-color;
     //margin-top: 0.3%;

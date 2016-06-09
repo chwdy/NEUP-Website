@@ -533,15 +533,15 @@ footer (91.5)
     body .footer-list {
       margin: 0;
       text-align: center;
-      padding-top: 12px;
-      padding-bottom: 10px;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
       padding-left: 10px; }
     body .footer-link {
       color: #FFFFFF;
       display: inline;
       font-size: 15px;
-      padding-bottom: 4px;
-      padding-top: 12px;
+      padding-bottom: 4%;
+      padding-top: 8%;
       text-align: center;
       width: 70%;
       list-style: none;
@@ -556,8 +556,8 @@ footer (91.5)
         color: #fff; }
     body .footer-info {
       text-align: center;
-      padding-top: 3px;
-      padding-bottom: 2px;
+      padding-top: 3%;
+      padding-bottom: 0;
       font-size: 5px;
       color: white;
       width: auto;
@@ -573,8 +573,8 @@ footer (91.5)
         color: #fff; }
     body .footer-sns {
       text-align: center;
+      margin-bottom: 1%;
       color: white;
-      margin: 0;
       padding: 0; }
       body .footer-sns a:link {
         text-decoration: none;
@@ -591,7 +591,7 @@ footer (91.5)
       body .footer-sns a .text {
         list-style: none;
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 0;
         text-align: center;
         font-size: 12px;
         color: #fff; }
@@ -615,6 +615,7 @@ footer (91.5)
       body .footer-sns .weibo .content {
         list-style: none;
         display: inline;
+        margin-top: 0;
         margin-left: 3%;
         margin-right: 3%;
         padding: 0; }
@@ -638,7 +639,7 @@ footer (91.5)
   @media only screen and (max-width: 480px) {
     body .footer {
       border: solid 1px red;
-      height: 23%;
+      height: 40%;
       width: 100%;
       background-color: #de0023;
       margin-bottom: 6%; }
