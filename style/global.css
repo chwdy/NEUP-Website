@@ -602,8 +602,7 @@ footer (91.5)
         padding: 0; }
         body .footer-sns .weixin .content .img {
           display: inline-block;
-          background-image: url("../images/weixin_icn.png");
-          background-repeat: no-repeat;
+          background: url("../images/weixin_icn.png") no-repeat;
           background-size: 25px 25px;
           height: 25px;
           width: 25px; }
@@ -616,14 +615,15 @@ footer (91.5)
       body .footer-sns .weibo .content {
         list-style: none;
         display: inline;
-        margin: 0;
+        margin-left: 3%;
+        margin-right: 3%;
         padding: 0; }
         body .footer-sns .weibo .content .img {
           display: inline-block;
           background: url("../images/weibo_icn.png") no-repeat;
-          background-size: 34px 34px;
-          height: 34px;
-          width: 34px; }
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
       body .footer-sns .tx-weibo .content {
         list-style: none;
         display: inline;
@@ -632,9 +632,9 @@ footer (91.5)
         body .footer-sns .tx-weibo .content .img {
           display: inline-block;
           background: url("../images/tx_weibo_icn.png") no-repeat;
-          background-size: 34px 34px;
-          height: 34px;
-          width: 34px; } }
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; } }
   @media only screen and (max-width: 480px) {
     body .footer {
       border: solid 1px red;
@@ -734,9 +734,9 @@ footer (91.5)
         body .footer-sns .weibo .content .img {
           display: inline-block;
           background: url("../images/weibo_icn.png") no-repeat;
-          background-size: 34px 34px;
-          height: 34px;
-          width: 34px; }
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
       body .footer-sns .tx-weibo .content {
         list-style: none;
         display: block;
@@ -745,9 +745,9 @@ footer (91.5)
         body .footer-sns .tx-weibo .content .img {
           display: inline-block;
           background: url("../images/tx_weibo_icn.png") no-repeat;
-          background-size: 34px 34px;
-          height: 34px;
-          width: 34px; } }
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; } }
 
 .frame {
   overflow: hidden; }
