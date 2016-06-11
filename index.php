@@ -10,14 +10,31 @@
     <link href="<?php bloginfo('template_url'); ?>/style/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/bootstrap-datepicker3.standalone.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/style/line1.css" rel="stylesheet" />
-	<link href="<?php bloginfo('template_url'); ?>/style/line3.css" rel="stylesheet" />
-	<link href="<?php bloginfo('template_url'); ?>/style/bootstrap-datepicker3.standalone.css.map" rel="stylesheet" />
-	<link href="<?php bloginfo('template_url'); ?>/style/bootstrap-datepicker3.standalone.css.map" rel="stylesheet" />
+    <link href="<?php bloginfo('template_url'); ?>/style/line3.css" rel="stylesheet" />
+    <link href="<?php bloginfo('template_url'); ?>/style/line2.css" rel="stylesheet">
+
     <link href="<?php bloginfo('template_url'); ?>/style/global.css" rel="stylesheet">
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.3.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/animenu.js"></script>
-
+    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#tabs21 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        });
+        $(function () {
+            $("#tabs22 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        });
+        $(function(){
+            $("#tabs221 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        })
+    </script>
     <script>
     // window.onload=funtion(){
     //     var  div = document.getElementById('menu_btn');
@@ -247,14 +264,14 @@
                     <div class="row" style="height: 100%;width:100%;margin: 0;">
                         <div class="line21-head" style="height: 14%;">
                             <ul class="nav-tabs nav" id="tabs1" style="height: 100%;width: 100%;">
-                                <li class="line2-active"><a href="#tabs-1" id="line2-head1" onclick="return false">活力支部</a></li>
-                                <li><a href="#tabs-2" id="line2-head2" onclick="return false">魅力团干</a></li>
-                                <li><a href="#tabs-3" id="line2-head3" onclick="return false">缤纷社团</a></li>
+                                <li class="line2-active"><a href="#tabs21-1" id="line2-head1" onclick="return false">活力支部</a></li>
+                                <li><a href="#tabs21-2" id="line2-head2" onclick="return false">魅力团干</a></li>
+                                <li><a href="#tabs21-3" id="line2-head3" onclick="return false">缤纷社团</a></li>
                             </ul>
                         </div>
                         <div class="line2-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
                         <div class="tab-content" id="line21-tab-content" style="height: 84%;border:solid 2px rgb(237,238,239);margin: 0;padding: 0">
-                            <div class="tab-pane active" id="tabs-1" style="height: 100%">
+                            <div class="tab-pane active" id="tabs21-1" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 6%;font-size:smaller;line-height: 150%">
@@ -273,20 +290,77 @@
                                         src="<?php echo bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png">
                                 </div>
                             </div>
-                            <div class="tab-pane" id="tabs-2">
+                            <div class="tab-pane" id="tabs21-2">
                                 魅力团干内容...
                             </div>
-                            <div class="tab-pane" id="tabs-3">
+                            <div class="tab-pane" id="tabs21-3">
                                 缤纷社团内容...
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="line22">
-            22
+            <div class="line22_frame" style="width: 100%;height: 100%;">
+                <div class="col-md-4 line22 frame" style="width: 100%;height: 100%;padding: 0">
+                    <div class="line22-container" style="width: 100%;height: 100%">
+                        <div class="row" style="height: 100%;width: 100%;margin: 0;padding: 0">
+                            <div class="line22-head" style="height: 14%;width: 100%;">
+                                <ul class="nav-tabs nav" id="tabs22" style="height: 100%;">
+                                    <li class="line22-active" style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-1" id="line22-head1" onclick="return false" style="padding: 0;">思想引领行动</a></li>
+                                    <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-2" id="line22-head2" onclick="return false" style="padding: 0">素质拓展行动</a></li>
+                                    <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-3" id="line22-head3" onclick="return false" style="padding: 0">权益服务行动</a></li>
+                                    <li style="width: 24.5%;text-align: center;float: right;"><a href="#tabs22-4" id="line22-head4" onclick="return false" style="padding: 0">组织提升行动</a></li>
+                                </ul>
+                            </div>
+                            <div class="line22-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
+                            <div class="tab-content" id="line22-tab-content" style="border: solid 1px yellow;height: 84%">
+                                <div class="tab-pane active" id="tabs22-1" style="height: 100%;">
+                                    <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
+                                        <ul class="nav-tabs nav" id="tabs221">
+                                            <li class="line221-active"><a href="#tabs221-1">主题团日</a></li>
+                                            <li><a href="#tabs221-2">四进四信</a></li>
+                                            <li><a href="#tabs221-3">青马工程</a></li>
+                                            <li><a href="#tabs221-4">社会实践</a></li>
+                                            <li><a href="#tabs221-5">智惠社区</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
+                                        <div class="tab-pane active" id="tabs221-1" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left">
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="height: 90%;width:100%;padding-top:5%">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs221-2">四进四信内容</div>
+                                        <div class="tab-pane" id="tabs221-3">青马工程内容</div>
+                                        <div class="tab-pane" id="tabs221-4">社会实践内容</div>
+                                        <div class="tab-pane" id="tabs221-5">智惠社区内容</div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tabs22-2">
+                                    素质拓展行动内容...
+                                </div>
+                                <div class="tab-pane" id="tabs22-3">
+                                    权益服务行动内容...
+                                </div>
+                                <div class="tab-pane" id="tabs22-4">
+                                    组织提升行动内容...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="line23">
             23
