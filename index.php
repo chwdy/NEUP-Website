@@ -369,19 +369,43 @@
                 </div>
             </div>
         </div>
-        <div class="line23" style="border: solid 1px red">
-            <div class="line23-head" style="border: solid 1px red;height: 12%">
+        <div class="line23" >
+            <div class="line23-head" style="height: 12%">
                 <ul class="nav-tabs nav" id="tabs23" style="height: 100%;width: 100%">
                     <li class="line221-active" style="width: 50%;text-align: center;"><a href="#tabs23-1">活动预告</a></li>
                     <li style="width: 50%;text-align: center;;"><a href="#tabs23-2">投稿排行</a></li>
                 </ul>
             </div>
             <div class="line23-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
-            <div class="tab-content" id="line23-tab-content" style="border: solid 1px black;height: 88%">
+            <div class="tab-content" id="line23-tab-content" style="height: 88%">
                 <div class="tab-pane active" id="tabs23-1" style="height: 100%">
-                    <div style="border: solid 1px black;height: 33.9%"></div>
-                    <div style="border: solid 1px black;height: 32.6%"></div>
-                    <div style="border: solid 1px red;height: 33%;bottom: 0;"></div>
+                    <div style="height: 33.9%;border-bottom: dotted" >
+                        <div style="width: 32.1%;height: 100%;float: left;">
+                            <img src="<?php bloginfo('template_url'); ?>/images/A3F62DAC-1A2D-4154-A80C-C2852F038729.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                        </div>
+                        <div style="width: 67.2%;height: 100%;float: right;">
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+                        </div>
+                    </div>
+                    <div style="height: 32.6%;border-bottom: dotted">
+                        <div style="width: 32.1%;height: 100%;float: left;">
+                            <img src="<?php bloginfo('template_url'); ?>/images/F1C7BE71-E938-4FA7-8120-43884A2870A3.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                        </div>
+                        <div style="width: 67.2%;height: 100%;float: right;">
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+
+                        </div>
+                    </div>
+
+                    <div style="height: 33%;bottom: 0;">
+                        <div style="width: 32.1%;height: 100%;float: left;">
+                            <img src="<?php bloginfo('template_url'); ?>/images/CB30B69F-515F-4594-8C9C-EBE455C58A54.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                        </div>
+                        <div style="width: 67.2%;height: 100%;float: right;">
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane" id="tabs23-2" style="height: 100%">投稿排行内容</div>
             </div>
@@ -393,9 +417,9 @@
         <div class="line31">
             31
         </div>
-        <div class="line32" style="border: solid 1px red;">
+        <div class="line32" style="">
             <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
-            <div class="line32b" style="width: 100%;height: 97%;border: solid 1px black">
+            <div class="line32b" style="width: 100%;height: 97%;">
                 <div class="swiper-container" style="height: 100%;">
                     <div class="swiper-wrapper" style="height: 100%">
                         <div class="swiper-slide" style="height: 100%"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
