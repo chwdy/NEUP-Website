@@ -12,11 +12,13 @@
     <link href="<?php bloginfo('template_url'); ?>/style/line1.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/style/line3.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/style/line2.css" rel="stylesheet">
-
+    <link href="<?php bloginfo('template_url'); ?>/style/swiper-3.3.1.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/global.css" rel="stylesheet">
+
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.3.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/animenu.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/swiper-3.3.1.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
     <script>
         $(function () {
@@ -31,6 +33,11 @@
         });
         $(function(){
             $("#tabs221 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        })
+        $(function(){
+            $("#tabs23 a").mousemove(function (e) {
                 $(this).tab('show');
             });
         })
@@ -315,7 +322,7 @@
                                 </ul>
                             </div>
                             <div class="line22-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
-                            <div class="tab-content" id="line22-tab-content" style="border: solid 1px yellow;height: 84%">
+                            <div class="tab-content" id="line22-tab-content" style="height: 84%">
                                 <div class="tab-pane active" id="tabs22-1" style="height: 100%;">
                                     <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
                                         <ul class="nav-tabs nav" id="tabs221">
@@ -362,44 +369,83 @@
                 </div>
             </div>
         </div>
-        <div class="line23">
-            23
+        <div class="line23" style="border: solid 1px red">
+            <div class="line23-head" style="border: solid 1px red;height: 12%">
+                <ul class="nav-tabs nav" id="tabs23" style="height: 100%;width: 100%">
+                    <li class="line221-active" style="width: 50%;text-align: center;"><a href="#tabs23-1">活动预告</a></li>
+                    <li style="width: 50%;text-align: center;;"><a href="#tabs23-2">投稿排行</a></li>
+                </ul>
+            </div>
+            <div class="line23-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
+            <div class="tab-content" id="line23-tab-content" style="border: solid 1px black;height: 88%">
+                <div class="tab-pane active" id="tabs23-1" style="height: 100%">
+                    <div style="border: solid 1px black;height: 33.9%"></div>
+                    <div style="border: solid 1px black;height: 32.6%"></div>
+                    <div style="border: solid 1px red;height: 33%;bottom: 0;"></div>
+                </div>
+                <div class="tab-pane" id="tabs23-2" style="height: 100%">投稿排行内容</div>
+            </div>
         </div>
 
     </div> <!-- /container -->
 
     <div class="line3">
-            <div class="line31">
-                31
-
+        <div class="line31">
+            31
+        </div>
+        <div class="line32" style="border: solid 1px red;">
+            <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
+            <div class="line32b" style="width: 100%;height: 97%;border: solid 1px black">
+                <div class="swiper-container" style="height: 100%;">
+                    <div class="swiper-wrapper" style="height: 100%">
+                        <div class="swiper-slide" style="height: 100%"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                </div>
+                <div class="swiper-button-next" style="right: 1225px;top: 90px; background-image: none; "><h4 style="color: rgb(250,89,89);margin-top: -8px;margin-left: 10px;margin-bottom: 0px;">></h4></div>
+                <div class="swiper-button-prev" style="left: 20px;top: 90px;background-image: none;"><h4 style="color: rgb(250,89,89);margin-top: -8px;"><</h4></div>
             </div>
-            <div class="line32">
-                32
-            </div>
-            <div class="line33">
-                <div class="line33a"><a href="#" class="ainline3">专题一 学习之路</a></div>
-            </div>
-
-            <div class="line34">
-				<div class="line34a"><a href="#" class="ainline3">专题二 青年之声</a></div>
-            </div>
-            <div class="line35">
-				<div class="line35a">活动专题</div>
-				<div class="line35b"></div>
-				<div class="line35c" ><ul style="list-style-type: none">
-                    <div class="line35c1"> <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_4.png" border="0" width="84.6%" height="19.3%"></a></div>
-                    <div class="line35c2"><a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_5.png" border="0" width="84.6%" height="19.3%"></a></div>
-                    <div class="line35c3"><a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_6.png" border="0"  width="84.6%" height="19.3%"></a></div>
-                </ul>
-            </div>
-            </div>
+        </div>
+        <div class="line33">
+            33
+        </div>
+        <div class="line34">
+            34
+        </div>
+        <div class="line35">
+            35
+        </div>
     </div>
 
     <footer class = "footer">
         <?php get_footer() ?>
 
     </footer>
-
-
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 5,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop:true,
+            centeredSlides: true,
+            autoplay: 1500,
+            autoplayDisableOnInteraction: false
+//            grabCursor: true
+        });
+    </script>
 </body>
 </html>

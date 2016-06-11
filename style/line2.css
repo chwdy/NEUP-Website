@@ -116,6 +116,14 @@
     bottom: 0px;
 }
 
+#tabs23 a{
+    height: 100%;
+    padding: 0;
+}
+#tabs23 a:hover {
+    background-color: #f05a57;
+    color: white;
+}
 @media only screen and (max-width: 480px) {
     .line2 {
         border: solid 1px red;
