@@ -1,4 +1,5 @@
 .line1 {
+  position: relative;
   border: solid 1px red;
   height: 27.5%;
   width: 100%;
@@ -24,20 +25,100 @@
     float: left;
     display: block; }
   .line1 .line12 {
+	position: relative;
     width: 23.4%;
     height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
-    float: left;
+    float: left; 
     display: block; }
+  .line12a {
+	font-weight:bold;
+	color:#F00;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 70%;
+    height: 10%;
+	}
+  .line12a1{
+	position: absolute;
+    right: 0;
+    top: 5%;
+    width: 30%;
+    height: 10%;
+	}
+  .line12b{
+	position: absolute;
+    left: 0;
+    top: 12%;
+    width: 100%;
+    height: 1%;
+    background-color: #D2691E;
+	}
+  .line12c{
+	position: absolute;
+	width:30%;
+	height:30%;
+	top:20%;
+	}
+  .line12d{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+	}
   .line1 .line13 {
+	position: relative;
     width: 22.3%;
     height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
     float: left;
     display: block; }
+  .line13a{
+	font-weight:bold;
+	color:#F00;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 70%;
+    height: 10%;
+  }	
+  .line13a2{
+	position: absolute;
+    right: 0;
+    top: 5%;
+    width: 30%;
+    height: 10%;
+  }
+  .line13b{
+	position: absolute;
+    left: 0;
+    top: 12%;
+    width: 100%;
+    height: 1%;
+    background-color: #D2691E;
+  }
+  .line13c{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+  }
+  .disc{
+	
+    list-style-type: disc;
+    font-size: 12px;
+  }
+  .ainline1{
+	color: #000000;
+    font-size: 0.7em;
+  }
   .line1 .line14 {
+	position: relative;
     height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
@@ -45,7 +126,37 @@
     display: block;
     width: 19.3%;
     height: 63.63636%; }
-
+  .line14a{
+	 font-weight:bold;
+	color:#F00;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 70%;
+    height: 10%;
+  }
+  .line14a2{
+	 position: absolute;
+    right: 0;
+    top: 5%;
+    width: 30%;
+    height: 10%;
+  }
+  .line14b{
+	position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    height: 1%;
+    background-color: #D2691E;
+  }
+  .line14c{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+  }
 .carousel-caption {
   position: absolute;
   bottom: 0.5%;
