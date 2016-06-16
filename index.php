@@ -246,51 +246,57 @@
             </div>
         </div>
       	<div class="line12">
+			<div class="line12a2"></div>
 			<div class="line12a"><p>先锋头条</p></div>
-			<div class="line12a1"><a href="#" class="ainline1">more>></a></div>
+			<div class="line12a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line12b"></div>
 			<div class="line12c">
-				
+				<a href="#" target="_blank" class="ainline12c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留守儿童，估算约1亿的消息上了微博热搜榜，
+				随后，各大媒体官号相继转发，这源于中国青年报中青在线的一篇题为“我国将首次摸清留守儿童底数”的报道。（点击看全文）</a>
 			</div>
 			<div class="line12d">
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+			  <ul class="disc">
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+			  </ul>
 			</div>
 			
         </div>
       	<div class="line13">
+			<div class="line13a2"></div>
 			<div class="line13a"><p>学院团训</p></div>
-			<div class="line13a2"><a href="#" class="ainline1">more>></a></div>
+			<div class="line13a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line13b"></div>
 			<div class="line13c">
 				<ul class="disc">
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
 				</ul>
 			</div>
         </div>
         <div class="line14">
+			<div class="line14a2"></div>
             <div class="line14a"><p>通知公告</p></div>
-			<div class="line14a2"><a href="#" class="line1a2">more>></a></div>
+			<div class="line14a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line14b"></div>
 			<div class="line14c">
-			<ul class="disc">
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+			<ul class="disc14">
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
+				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
 			</ul>
 			</div>
         </div>
@@ -484,13 +490,21 @@
             </div>
         </div>
         <div class="line33">
-            33
+            <div class="line33a"><a href="#" target="_blank" class="ainline3">专题一 学习之路</a></div>
         </div>
         <div class="line34">
-            34
+            <div class="line34a"><a href="#" target="_blank" class="ainline3">专题二 青年之声</a></div>
         </div>
         <div class="line35">
-            35
+            <div class="line35a">活动专题</div>
+            <div class="line35b"></div>
+            <div class="line35c" >
+				<ul style="list-style-type: none">
+                    <div class="line35c1"> <a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_4.png" border="0" width="84.6%" height="19.3%"></a></div>
+                    <div class="line35c2"><a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_5.png" border="0" width="84.6%" height="19.3%"></a></div>
+                    <div class="line35c3"><a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_6.png" border="0"  width="84.6%" height="19.3%"></a></div>
+                </ul>
+            </div>
         </div>
     </div>
 
