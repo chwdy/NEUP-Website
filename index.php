@@ -14,12 +14,11 @@
     <link href="<?php bloginfo('template_url'); ?>/style/line2.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/swiper-3.3.1.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/global.css" rel="stylesheet">
-
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.3.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/animenu.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/swiper-3.3.1.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/swiper-3.3.1.min.js"></script>
     <script>
         $(function () {
             $("#tabs21 a").mousemove(function (e) {
@@ -35,12 +34,44 @@
             $("#tabs221 a").mousemove(function (e) {
                 $(this).tab('show');
             });
-        })
+        });
         $(function(){
             $("#tabs23 a").mousemove(function (e) {
                 $(this).tab('show');
             });
         })
+    </script>
+    <script type="text/javascript">
+        function getmyDate(){
+            // 获取页面UI
+            var month_text0 = document.getElementById('month0'),
+                month_text1 = document.getElementById('month1'),
+                month_text2 = document.getElementById('month2');
+            var day_text0 =document.getElementById('day0'),
+                day_text1 =document.getElementById('day1'),
+                day_text2 =document.getElementById('day2');
+            // 获取时间
+            var nowDate = new Date(),
+                nextDate = new Date(nowDate.getTime()+24*60*60*1000),  //明天
+                nextnextDate = new Date(nextDate.getTime()+24*60*60*1000);    //后天
+
+            var year0 = nowDate.getFullYear(),
+                month0 = nowDate.getMonth(),
+                date0 = nowDate.getDate();
+            var year1 = nextDate.getFullYear(),
+                month1 = nextDate.getMonth(),
+                date1 = nextDate.getDate();
+            var year2 = nextnextDate.getFullYear(),
+                month2 = nextnextDate.getMonth(),
+                date2 = nextnextDate.getDate();
+            var Monthes = [ "一月", "二月", "三月", "四月", "五月", "六月", "七月","八月","九月","十月","十一月","十二月" ];
+            month_text0.innerHTML=Monthes[month0];
+            day_text0.innerHTML=date0;
+            month_text1.innerHTML=Monthes[month1];
+            day_text1.innerHTML=date1;
+            month_text2.innerHTML=Monthes[month2];
+            day_text2.innerHTML=date2;
+        }
     </script>
     <script>
     // window.onload=funtion(){
@@ -88,7 +119,7 @@
 </head>
 
 
-<body>
+<body onload="getmyDate();">
     <div class="header">
         <div class = "banner">
 
@@ -190,26 +221,28 @@
                     <li data-target="#myCarousel" data-slide-to="2" type="circle"></li>
                 </div>
                 <!-- 轮播（Carousel）项目 -->
-                <div class="carousel-inner"  style="height: 100%;">
+                <div class="carousel-inner" style="height: 100%;">
                     <div class="item active" style="height: 100%;">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20151020221927_21947.png" alt="First slide" style="height: 100%;width: 100%">
+                        <img src="<?php bloginfo('template_url'); ?>/images/20151020221927_21947.png" alt="First slide"
+                             style="height: 100%;width: 100%">
                         <div class="carousel-caption" id="carousel-caption1"><p>管院学子在第八届网商创新应用大赛辽宁赛区决赛中喜获佳绩</p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide" style="height: 100%;width: 100%">
+                        <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide"
+                             style="height: 100%;width: 100%">
                         <div class="carousel-caption" id="carousel-caption2"><p>中荷学院第八届团委学生会工作总结暨第九届团委学生会主席团换</p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="height: 100%;width:100%">
+                        <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide"
+                             style="height: 100%;width:100%">
                         <div class="carousel-caption" id="carousel-caption3"><p>“唱响红色旋律 构建和谐社区”七一文艺汇演成功参演</p></div>
                     </div>
-                    <!-- 轮播（Carousel）导航 -->
-                    <a class="carousel-control left" href="#myCarousel"
-                       data-slide="prev"><br><br><br><br>&lsaquo;</a>
-                    <a class="carousel-control right" href="#myCarousel"
-                       data-slide="next"><br><br><br><br>&rsaquo;</a>
                 </div>
-
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel"
+                   data-slide="prev"><br><br><br><br>&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next"><br><br><br><br>&rsaquo;</a>
             </div>
         </div>
       	<div class="line12">
@@ -281,7 +314,7 @@
                             <div class="tab-pane active" id="tabs21-1" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
-                                    <ul style="padding-left: 6%;font-size:smaller;line-height: 150%">
+                                    <ul style="padding-left: 6%;font-size:smaller;line-height: 150%;">
                                         <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
                                         <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
                                         <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
@@ -370,39 +403,48 @@
             </div>
         </div>
         <div class="line23" >
-            <div class="line23-head" style="height: 12%">
+            <div class="line23-head" style="height: 12% ;background-color: white">
                 <ul class="nav-tabs nav" id="tabs23" style="height: 100%;width: 100%">
-                    <li class="line221-active" style="width: 50%;text-align: center;"><a href="#tabs23-1">活动预告</a></li>
+                    <li class="line221-active" style="width: 50%;text-align: center;"><a href="#tabs23-1" style="font-weight: bolder;">活动预告</a></li>
                     <li style="width: 50%;text-align: center;;"><a href="#tabs23-2">投稿排行</a></li>
                 </ul>
             </div>
             <div class="line23-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
             <div class="tab-content" id="line23-tab-content" style="height: 88%">
                 <div class="tab-pane active" id="tabs23-1" style="height: 100%">
-                    <div style="height: 33.9%;border-bottom: dotted" >
+                    <div style="height: 33.9%;border-bottom: dotted;background-color: white" >
                         <div style="width: 32.1%;height: 100%;float: left;">
-                            <img src="<?php bloginfo('template_url'); ?>/images/A3F62DAC-1A2D-4154-A80C-C2852F038729.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                            <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                                <div id="month0" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
+                                <div id="day0" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
+                            </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
                         </div>
                     </div>
-                    <div style="height: 32.6%;border-bottom: dotted">
+                    <div style="height: 32.6%;border-bottom: dotted;background-color: white">
                         <div style="width: 32.1%;height: 100%;float: left;">
-                            <img src="<?php bloginfo('template_url'); ?>/images/F1C7BE71-E938-4FA7-8120-43884A2870A3.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                            <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                                <div id="month1" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
+                                <div id="day1" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
+                            </div>
                         </div>
-                        <div style="width: 67.2%;height: 100%;float: right;">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+                        <div style="width: 67.2%;height: 100%;float: right;background-color: white">
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
 
                         </div>
                     </div>
 
                     <div style="height: 33%;bottom: 0;">
                         <div style="width: 32.1%;height: 100%;float: left;">
-                            <img src="<?php bloginfo('template_url'); ?>/images/CB30B69F-515F-4594-8C9C-EBE455C58A54.png" alt="Second slide" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                            <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
+                                <div id="month2" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
+                                <div id="day2" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
+                            </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%">地点:东大东大东大东大东大</span></a>
+                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
 
                         </div>
                     </div>
@@ -417,12 +459,12 @@
         <div class="line31">
             31
         </div>
-        <div class="line32" style="">
+        <div class="line32">
             <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
             <div class="line32b" style="width: 100%;height: 97%;">
                 <div class="swiper-container" style="height: 100%;">
                     <div class="swiper-wrapper" style="height: 100%">
-                        <div class="swiper-slide" style="height: 100%"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
+                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
                         <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
                         <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
                         <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
@@ -471,5 +513,6 @@
 //            grabCursor: true
         });
     </script>
+
 </body>
 </html>

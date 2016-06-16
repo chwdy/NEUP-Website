@@ -76,6 +76,10 @@
     text-decoration: none;
 }
 
+
+.tab-pane-content-1 a{
+    color: black;
+}
 .line2 .line22 {
     width: 46%;
     height: 100%;
@@ -102,6 +106,21 @@
     line-height: 200%;
 }
 
+
+#line22-left-tab-content a{
+    color: black;
+}
+
+#tabs221 a{
+    color: rgb(240,100,96)
+}
+
+#tabs22 a,
+#tabs1 a,
+#tabs23 a{
+    font-weight: bolder;
+    color: #d9110b;
+}
 .line2 .line23 {
     width: 19.2%;
     height: 100%;
