@@ -1,0 +1,28 @@
+/*
+	Author: 梦幻神化 www.bluesdream.com
+*/
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,tbody,tr,td,img,span,em,input,textarea,button{margin:0;padding:0;}
+html{height:100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4,h5,h6,input,select,textarea,button{font-size:100%;}
+ol,ul{list-style-type:none;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+input,select,button{vertical-align:middle;-webkit-appearance:none;}
+address,cite,dfn,em,i,var{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+a{ text-decoration:none;}
+a:focus,input,textarea{outline-style:none;}
+textarea{resize:none;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;overflow:hidden;}
+.clearfix{zoom:1;font-size:0;}
+.left{ float:left;}
+.right{ float:right;}
+
+/* Global */
+#topBar{width:90%;height:28px;font:12px/28px \5B8B\4F53,Arial,sans-serif;text-align:center;color:#F0F0F0;text-shadow:0 1px 0 rgba(0,0,0,0.2);border-bottom:1px solid rgba(0,0,0,.3);position:relative;z-index:9998;padding:0 5%;overflow:hidden;}
+#topBar a{float:left;margin-left:15px;color:#F0F0F0;}
+#topBar .tbBg{display:block;position:absolute;top:0;left:0;width:115%;height:28px;background:#000;opacity:.2;filter:Alpha(opacity=20);z-index:-1;}
+#topBar .tbLeft{padding-left:46px;}
+#statistics{font:12px/28px \5B8B\4F53,Arial,sans-serif;display:inline-block;height:28px;line-height:28px;text-shadow:0 1px 0 rgba(0,0,0,0.2);position:absolute;top:0;left:5%;z-index:9999;}
+#statistics a{color:#F0F0F0;}
+#topBar a:hover, #statistics a:hover{color:#FFF;}

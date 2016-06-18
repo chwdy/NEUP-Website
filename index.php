@@ -14,11 +14,16 @@
     <link href="<?php bloginfo('template_url'); ?>/style/line2.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/swiper-3.3.1.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/global.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/style/ublue_ImageCarousel.css" rel="stylesheet">
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.3.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
+    <link href="<?php bloginfo('template_url'); ?>/style/default.css" rel="stylesheet">
     <script src="<?php bloginfo('template_url'); ?>/js/animenu.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/swiper-3.3.1.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/ublue_ImageCarousel.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/default.js"></script>
+
     <script>
         $(function () {
             $("#tabs21 a").mousemove(function (e) {
@@ -40,6 +45,43 @@
                 $(this).tab('show');
             });
         })
+    </script>
+    <script>
+        $(function() {
+            /* 设置和说明：
+             =====================================================
+             // Dom节点
+             ubArea:'.focusArea',				// 外层（上下无缝滚动时，以该层做定位）
+             ubCon:'.focusCon',					// 内容（滚动时以该层做定位）
+             ubItem:'.focusItem',				// 列表项
+             ubIndicators:'.focusIndicators',		// 小按钮
+             ubPrev:'.focusPrev',					// 向上按钮
+             ubNext:'.focusNext',				// 向下按钮
+             // 效果展现 （以下为默认值）
+             ubEffect:'left',						// 效果呈现方式 'left' 'top' 'fade' 'leftSeamless' 'topSeamless'
+             ubTrigger:'hover',					// 小按钮经触发条件 'hover' 'click'
+             ubAutoPlay:'on',					// 是否自动播放
+             ubAutoBtn:'on',						// 小按钮是否自动生成（便于做成缩略图形式）
+             ubTitleHover:'off',					// 标题是否滑动显示
+             ubGallery:'off',						// 是否开启多图滚动
+             // 时间设置 （按毫秒计算：1000毫秒=1秒）
+             ubTime:5000,						// 自动播放的时间间隔
+             ubSpeed:480,						// 图片切换的速度
+             ubTitleSpeed:50					// 标题滑过显示的速度
+             =====================================================
+             */
+            $(".demoH").ublue_ImageCarousel({
+//                ubAutoPlay:"on",			// 关闭自动播放
+//                ubEffect:"leftSeamless",		// 图片切换方式为无缝滚动
+//                ubTime:2000,
+//                ubGallery:'on',
+//                ubAutoBtn:'on',
+//                ubSpeed:1000,						// 图片切换的速度
+                ubAutoPlay:"on",			// 关闭自动播放
+                ubEffect:"leftSeamless",		// 图片切换方式为无缝滚动
+                ubTime:1000
+            });
+        });
     </script>
     <script type="text/javascript">
         function getmyDate(){
@@ -468,25 +510,58 @@
         <div class="line32">
             <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
             <div class="line32b" style="width: 100%;height: 97%;">
-                <div class="swiper-container" style="height: 100%;">
-                    <div class="swiper-wrapper" style="height: 100%">
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></div>
-                        <div class="swiper-slide"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></div>
+                <div class="focusMain isCarousel demoH" style="width: 100%;height: 100%">
+                    <div id="leftbtn" style="width: 10%;height:100%;float: left;">
+                        <a class="focusBtn focusPrev" href="javascript:;"
+                           style="background-color: transparent;padding-left: 3%"><br>
+                            <p style="font-weight: bolder;color: rgb(251,86,88);"><</p></a>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
+                    <div style="width: 80%;height: 100%;float: left">
+                        <div class="focusArea" style="width: 100%;height: 90%;margin: 0">
+                            <div class="focusCon" style="">
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
+                                </div>
+                                <div class="focusItem">
+                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focusIndicators" id="line32b-head"
+                             style="height: 10%;width: 100%;color: black;">
+                        </div>
+                    </div>
+                    <div id="rightbtn" style="width: 10%;height: 100%;float: right;">
+                        <a class="focusBtn focusNext" href="javascript:;"
+                           style="background-color: transparent;padding-right: 3%"><br>
+                            <p style="font-weight: bolder;color: rgb(251,86,88);float: right">></p></a>
+                    </div>
+
                 </div>
-                <div class="swiper-button-next" style="right: 1225px;top: 90px; background-image: none; "><h4 style="color: rgb(250,89,89);margin-top: -8px;margin-left: 10px;margin-bottom: 0px;">></h4></div>
-                <div class="swiper-button-prev" style="left: 20px;top: 90px;background-image: none;"><h4 style="color: rgb(250,89,89);margin-top: -8px;"><</h4></div>
             </div>
         </div>
         <div class="line33">
@@ -510,23 +585,6 @@
 
     <footer class = "footer">
         <?php get_footer() ?>
-
     </footer>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 5,
-            paginationClickable: true,
-            spaceBetween: 30,
-            loop:true,
-            centeredSlides: true,
-            autoplay: 1500,
-            autoplayDisableOnInteraction: false
-//            grabCursor: true
-        });
-    </script>
-
 </body>
 </html>
