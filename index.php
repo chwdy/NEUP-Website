@@ -9,6 +9,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <link href="<?php bloginfo('template_url'); ?>/style/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/bootstrap-datepicker3.standalone.css" rel="stylesheet" />
+    <link href="<?php bloginfo('template_url'); ?>/style/default.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/style/line1.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/style/line3.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url'); ?>/style/line2.css" rel="stylesheet">
@@ -17,7 +18,6 @@
     <link href="<?php bloginfo('template_url'); ?>/style/ublue_ImageCarousel.css" rel="stylesheet">
     <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.3.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
-    <link href="<?php bloginfo('template_url'); ?>/style/default.css" rel="stylesheet">
     <script src="<?php bloginfo('template_url'); ?>/js/animenu.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/swiper-3.3.1.min.js"></script>
