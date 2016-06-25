@@ -36,24 +36,24 @@
 	font-weight:bold;
 	color:#F00;
     position: absolute;
-    left: 7%;
-    top: 5%;
+    left: 6%;
+    top: 3%;
     width: 70%;
-    height: 10%;
+    height: 9%;
 	}
   .line12a1{
 	position: absolute;
     right: 0;
-    top: 5%;
+    top: 4%;
     width: 20%;
     height: 10%;
 	}
   .line12a2{
 	position: absolute;
 	left:3%;
-	top:5%;
-	width:2%;
-	height:7%;
+	top:4%;
+	width:1%;
+	height:6%;
 	background-color:#FF0000;
   }
   .line12b{
@@ -67,18 +67,33 @@
   .line12c{
 	position: absolute;
 	width:100%;
-	height:30%;
-	top:20%;
+	height:28%;
+	top:15%;
   }
   .line12d{
 	position: absolute;
     left: 0;
+	width:100%;
+	top:39%;
+	height:6%;
+  }
+  .line12e{
+	position: absolute;
+    left: 0;
     bottom: 0;
     width: 100%;
-    height: 50%;
+    height:52%;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
+	}
+	.line12e1{
+	  left:0;
+	  width: 100%;
+	  height:17%;
+	  white-space:nowrap;
+	  overflow:hidden;
+	  text-overflow:ellipsis;
 	}
   .ainline12c{
 	color:#000000;
@@ -96,24 +111,24 @@
 	font-weight:bold;
 	color:#F00;
     position: absolute;
-    left: 7%;
-    top: 5%;
+    left: 6%;
+    top: 3%;
     width: 70%;
-    height: 10%;
+    height: 9%;
   }	
   .line13a1{
 	position: absolute;
     right:0;
-    top: 5%;
+    top: 4%;
     width: 20%;
     height: 10%;
   }
   .line13a2{
 	position: absolute;
 	left:3%;
-	top:5%;
-	width:2%;
-	height:7%;
+	top:4%;
+	width:1%;
+	height:6%;
 	background-color:#FF0000;
   }
   .line13b{
@@ -129,15 +144,24 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 80%;
+    height: 85%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+  }
+  .line13c1{
+	left:0;
+	width: 100%;
+	height:11%;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
   }
   .disc{
 	list-style-type: disc;
-    font-size: 13px;
+    font-size: 12px;
 	padding-left:6%;
+	line-height:150%;
   }
   .ainline1{
 	color: #000000;
@@ -156,23 +180,23 @@
 	color:#F00;
     position: absolute;
     left: 7%;
-    top: 4%;
+    top: 1%;
     width: 70%;
-    height: 9%;
+    height:5%;
   }
   .line14a1{
 	position: absolute;
     right: 0;
-    top: 4%;
+    top: 3%;
     width: 20%;
     height: 9%;
   }
   .line14a2{
 	position: absolute;
 	left:3%;
-	top:5%;
-	width:2%;
-	height:10%;
+	top:3%;
+	width:1%;
+	height:8%;
 	background-color:#FF0000;
   }
   .line14b{
@@ -189,6 +213,14 @@
     bottom: 0;
     width: 100%;
     height: 80%;
+  }
+  .line14c1{
+	left:0;
+	width:100%;
+	height:20%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
   }
   .disc14{
 	list-style-type: disc;
