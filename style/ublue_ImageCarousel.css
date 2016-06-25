@@ -28,7 +28,7 @@
 
 .focusItem {
     position: relative;
-    margin: 0 4px;
+    margin: 0 2px;
     padding: 1px;
     border: 1px solid #666;
     background: #DDDEDE;
@@ -56,7 +56,7 @@
 }
 
 .focusIndicators {
-    height: 7px;
+    height: 1px;
     font-size: 0;
     line-height: 0;
     text-align: center;
@@ -65,9 +65,9 @@
 .focusIndicators a {
     border-radius: 100px;
     display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 1px;
+    width: 2px;
+    height: 2px;
+    margin: 0 2.5px;
     background-position: 0 -50px;
     font-size: 0;
     _zoom: 1;
@@ -77,8 +77,8 @@
 
 .focusIndicators .current {
     background-color: white;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     border: solid 1px rgb(251,86,88);
     border-radius: 100px;
 }
@@ -116,14 +116,14 @@
 /* = 轮播和焦点图区分
 -------------------------------------------------------------- */
 .isCarousel .focusArea {
-    height: 130px;
+    height: 80%;
 }
 
 .isCarousel .focusItem {
     top: 10px;
     float: left;
-    width: 75px;
-    height: 100px;
+    width: 58px;
+    height: 95px;
     _display: inline;
 }
 

@@ -457,7 +457,7 @@
                                 </ul>
                             </div>
                             <div class="line22-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
-                            <div class="tab-content" id="line22-tab-content" style="height: 84%">
+                            <div class="tab-content" id="line22-tab-content" style="height: 84%;border:solid 2px rgb(237,238,239)">
                                 <div class="tab-pane active" id="tabs22-1" style="height: 100%;">
                                     <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
                                         <ul class="nav-tabs nav" id="tabs221" style="padding-left: 10%;font-size: small;padding-top: 10%;height: 100%">
@@ -847,21 +847,6 @@
                                 <div class="focusItem">
                                     <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></a>
                                 </div>
-                                <div class="focusItem">
-                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
-                                </div>
-                                <div class="focusItem">
-                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
-                                </div>
-                                <div class="focusItem">
-                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-1.png"></a>
-                                </div>
-                                <div class="focusItem">
-                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-2.png"></a>
-                                </div>
-                                <div class="focusItem">
-                                    <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/line41-3.png"></a>
-                                </div>
                             </div>
                         </div>
                         <div class="focusIndicators" id="line32b-head"
@@ -871,7 +856,7 @@
                     <div id="rightbtn" style="width: 10%;height: 100%;float: right;">
                         <a class="focusBtn focusNext" href="javascript:;"
                            style="background-color: transparent;padding-right: 3%"><br>
-                            <p style="font-weight: bolder;color: rgb(251,86,88);float: right">></p></a>
+                            <p style="font-weight: bolder;color: rgb(251,86,88);float: right;">></p></a>
                     </div>
 
                 </div>
