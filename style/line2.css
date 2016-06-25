@@ -22,11 +22,9 @@
     padding: 0;
 }
 
-.line2 .line21 .line21-head li {
+.line21-head li {
     height: 100%;
-    width: 33%;
-    margin-left: 0.1%;
-    margin-right: 0.1%;
+    width: 33.3%;
     text-align: center;
     /*border-right: solid rgb(214,27,33);*/
     /*background-color: white;*/

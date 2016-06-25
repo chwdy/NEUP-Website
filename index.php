@@ -359,9 +359,9 @@
                     <div class="row" style="height: 100%;width:100%;margin: 0;">
                         <div class="line21-head" style="height: 14%;">
                             <ul class="nav-tabs nav" id="tabs1" style="height: 100%;width: 100%;">
-                                <li class="active"><a href="#tabs21-1" id="line2-head1" onclick="return false" style="border-radius: 0">活力支部</a></li>
-                                <li><a href="#tabs21-2" id="line2-head2" onclick="return false" style="border-radius: 0">魅力团干</a></li>
-                                <li><a href="#tabs21-3" id="line2-head3" onclick="return false" style="border-radius: 0">缤纷社团</a></li>
+                                <li class="active" style="width: 33.3%;margin: 0"><a href="#tabs21-1" id="line2-head1" onclick="return false" style="border-radius: 0;border: none;padding-top: 1%">活力支部</a></li>
+                                <li style="width: 33.3%;margin: 0"><a href="#tabs21-2" id="line2-head2" onclick="return false" style="border-radius: 0;border-left: solid rgb(214,27,33);border-right: solid rgb(214,27,33);border-bottom: 0;border-top: 0;padding-top: 1%">魅力团干</a></li>
+                                <li style="width: 33.3%;margin: 0"><a href="#tabs21-3" id="line2-head3" onclick="return false" style="border-radius: 0;border: 0;padding-top: 1%">缤纷社团</a></li>
                             </ul>
                         </div>
                         <div class="line2-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
