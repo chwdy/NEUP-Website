@@ -91,22 +91,23 @@
     background-color: #f05a57;
     color: white;
 }
-#tabs221{
+#tabs221,#tabs222,#tabs223,#tabs224{
     height: 100%;
 }
 
-#tabs221 a{
+#tabs221 a,
+#tabs222 a,
+#tabs223 a,
+#tabs224 a{
     padding: 0;
     line-height: 200%;
+    color: rgb(240,100,96)
+
 }
 
 
 #line22-left-tab-content a{
     color: black;
-}
-
-#tabs221 a{
-    color: rgb(240,100,96)
 }
 
 #tabs22 a,
@@ -201,6 +202,12 @@
 
 }
 #line21-tab-content span{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#line22-left-tab-content span{
     display: block;
     overflow: hidden;
     white-space: nowrap;

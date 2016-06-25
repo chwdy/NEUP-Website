@@ -41,6 +41,21 @@
             });
         });
         $(function(){
+            $("#tabs222 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        });
+        $(function(){
+            $("#tabs223 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        });
+        $(function(){
+            $("#tabs224 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        });
+        $(function(){
             $("#tabs23 a").mousemove(function (e) {
                 $(this).tab('show');
             });
@@ -367,9 +382,6 @@
                         <div class="line2-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
                         <div class="tab-content" id="line21-tab-content" style="height: 84%;border:solid 2px rgb(237,238,239);margin: 0;padding: 0">
                             <div class="tab-pane active" id="tabs21-1" style="height: 100%">
-
-
-
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
@@ -385,16 +397,10 @@
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 5%;margin-bottom: 8%;">
                                 </div>
-
-
-
-
                             </div>
                             <div class="tab-pane" id="tabs21-2" style="height: 100%">
-
-
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
@@ -410,10 +416,8 @@
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" style="height:87%;margin-top: 5%;margin-bottom: 8%;">
                                 </div>
-
-
                             </div>
                             <div class="tab-pane" id="tabs21-3" style="height: 100%">
                                 <div class="tab-pane-content-1"
@@ -431,7 +435,7 @@
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/20150610211937_28458.png" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20150610211937_28458.png" style="height:87%;margin-top: 5%;margin-bottom: 8%;">
                                 </div>
                             </div>
                         </div>
@@ -446,53 +450,298 @@
                         <div class="row" style="height: 100%;width: 100%;margin: 0;padding: 0">
                             <div class="line22-head" style="height: 14%;width: 100%;">
                                 <ul class="nav-tabs nav" id="tabs22" style="height: 100%;">
-                                    <li class="active" style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-1" id="line22-head1" onclick="return false" style="padding: 0;">思想引领行动</a></li>
-                                    <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-2" id="line22-head2" onclick="return false" style="padding: 0">素质拓展行动</a></li>
-                                    <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-3" id="line22-head3" onclick="return false" style="padding: 0">权益服务行动</a></li>
-                                    <li style="width: 24.5%;text-align: center;float: right;"><a href="#tabs22-4" id="line22-head4" onclick="return false" style="padding: 0">组织提升行动</a></li>
+                                    <li class="active" style="width: 25%;text-align: center;margin:0;height: 100%"><a href="#tabs22-1" id="line22-head1" onclick="return false" style="height: 100%;padding: 0;border-radius: 0;border: 0;padding-top: 1%;margin: 0">思想引领行动</a></li>
+                                    <li style="width: 25%;text-align: center;margin:0;height: 100%"><a href="#tabs22-2" id="line22-head2" onclick="return false" style="height: 100%;padding: 0;border-radius: 0;padding-top: 1%;margin: 0;border-bottom: 0;border-top: 0;border-left: solid rgb(214,27,33);border-right: solid rgb(214,27,33)">素质拓展行动</a></li>
+                                    <li style="width: 25%;text-align: center;margin:0;height: 100%"><a href="#tabs22-3" id="line22-head3" onclick="return false" style="height: 100%;padding: 0;border-radius: 0;border-bottom: 0;border-top: 0;border-left:0;border-right: solid rgb(214,27,33);margin: 0">权益服务行动</a></li>
+                                    <li style="width: 25%;text-align: center;margin:0;float: right;height: 100%"><a href="#tabs22-4" id="line22-head4" onclick="return false" style="height: 100%;padding: 0;border-radius: 0;border: 0;padding-top: 1%;margin: 0">组织提升行动</a></li>
                                 </ul>
                             </div>
                             <div class="line22-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
                             <div class="tab-content" id="line22-tab-content" style="height: 84%">
                                 <div class="tab-pane active" id="tabs22-1" style="height: 100%;">
                                     <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
-                                        <ul class="nav-tabs nav" id="tabs221">
-                                            <li class="line221-active"><a href="#tabs221-1">主题团日</a></li>
-                                            <li><a href="#tabs221-2">四进四信</a></li>
-                                            <li><a href="#tabs221-3">青马工程</a></li>
-                                            <li><a href="#tabs221-4">社会实践</a></li>
-                                            <li><a href="#tabs221-5">智惠社区</a></li>
+                                        <ul class="nav-tabs nav" id="tabs221" style="padding-left: 10%;font-size: small;padding-top: 10%;height: 100%">
+                                            <li class="line221-active"style="height: 20%"><a href="#tabs221-1" style="border: 0;margin: 0;height: 100%" onclick="return false">主题团日</a></li>
+                                            <li style="height: 20%"><a href="#tabs221-2" style="border: 0;margin: 0;height: 100%" onclick="return false">四进四信</a></li>
+                                            <li style="height: 20%"><a href="#tabs221-3" style="border: 0;margin: 0;height: 100%" onclick="return false">青马工程</a></li>
+                                            <li style="height: 20%"><a href="#tabs221-4" style="border: 0;margin: 0;height: 100%" onclick="return false">社会实践</a></li>
+                                            <li style="height: 20%"><a href="#tabs221-5" style="border: 0;margin: 0;height: 100%" onclick="return false">智惠社区</a></li>
                                         </ul>
                                     </div>
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs221-1" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left">
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
-                                                <li style="float: left"><a style="font-size: small">中国青年报东北大学将首次摸清留的报道到的倾情于</a></li><span style="float: right"> 03-30</span>
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
-                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="height: 90%;width:100%;padding-top:5%">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
                                             </div>
                                         </div>
-                                        <div class="tab-pane" id="tabs221-2">四进四信内容</div>
-                                        <div class="tab-pane" id="tabs221-3">青马工程内容</div>
-                                        <div class="tab-pane" id="tabs221-4">社会实践内容</div>
-                                        <div class="tab-pane" id="tabs221-5">智惠社区内容</div>
+                                        <div class="tab-pane" id="tabs221-2" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs221-3" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs221-4" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs221-5" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="tabs22-2">
-                                    素质拓展行动内容...
+                                <div class="tab-pane" id="tabs22-2" style="height: 100%">
+                                    <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
+                                        <ul class="nav-tabs nav" id="tabs222" style="padding-left: 10%;font-size: small;padding-top: 10%;height: 100%">
+                                            <li class="line221-active"style="height: 20%"><a href="#tabs222-1" style="border: 0;margin: 0;height: 100%" onclick="return false">创新创业</a></li>
+                                            <li style="height: 20%"><a href="#tabs222-2" style="border: 0;margin: 0;height: 100%" onclick="return false">能力拓展</a></li>
+                                            <li style="height: 20%"><a href="#tabs222-3" style="border: 0;margin: 0;height: 100%" onclick="return false">校园文化</a></li>
+                                            <li style="height: 20%"><a href="#tabs222-4" style="border: 0;margin: 0;height: 100%" onclick="return false">缤纷社团</a></li>
+                                            <li style="height: 20%"><a href="#tabs222-5" style="border: 0;margin: 0;height: 100%" onclick="return false">青春三走</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
+                                        <div class="tab-pane active" id="tabs222-1" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs222-2" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs222-3" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs222-4" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs222-5" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane" id="tabs22-3">
-                                    权益服务行动内容...
+                                <div class="tab-pane" id="tabs22-3" style="height: 100%">
+                                    <div class="line22-left-head" style="width: 14.1%;float: left;height: 100%">
+                                        <ul class="nav-tabs nav" id="tabs223" style="padding-left: 10%;font-size: small;padding-top: 10%;height: 100%">
+                                            <li class="line221-active"style="height: 33.3%"><a href="#tabs223-1" style="border: 0;margin: 0;height: 100%;" onclick="return false">校长接待日</a></li>
+                                            <li style="height: 33.3%"><a href="#tabs223-2" style="border: 0;margin: 0;height: 100%" onclick="return false">提案反馈</a></li>
+                                            <li style="height: 33.3%"><a href="#tabs223-3" style="border: 0;margin: 0;height: 100%" onclick="return false">出彩东大人</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
+                                        <div class="tab-pane active" id="tabs223-1" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs223-2" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs223-3" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane" id="tabs22-4">
-                                    组织提升行动内容...
+                                <div class="tab-pane" id="tabs22-4" style="height: 100%">
+                                    <div class="line22-left-head" style="width: 11.1%;float: left;height: 100%">
+                                        <ul class="nav-tabs nav" id="tabs224" style="padding-left: 10%;font-size: small;padding-top: 10%;height: 100%">
+                                            <li class="line221-active"style="height: 33.3%"><a href="#tabs224-1" style="border: 0;margin: 0;height: 100%" onclick="return false">活力支部</a></li>
+                                            <li style="height: 33.3%"><a href="#tabs224-2" style="border: 0;margin: 0;height: 100%" onclick="return false">学生组织</a></li>
+                                            <li style="height: 33.3%"><a href="#tabs224-3" style="border: 0;margin: 0;height: 100%" onclick="return false">青年教工</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
+                                        <div class="tab-pane active" id="tabs224-1" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs224-2" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tabs224-3" style="height: 100%">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+
+                                            </div>
+                                            <div style="width: 36%;height: 100%;float: right">
+                                                <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
