@@ -367,6 +367,9 @@
                         <div class="line2-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
                         <div class="tab-content" id="line21-tab-content" style="height: 84%;border:solid 2px rgb(237,238,239);margin: 0;padding: 0">
                             <div class="tab-pane active" id="tabs21-1" style="height: 100%">
+
+
+
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
@@ -384,8 +387,14 @@
                                     <img
                                         src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
                                 </div>
+
+
+
+
                             </div>
                             <div class="tab-pane" id="tabs21-2" style="height: 100%">
+
+
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
@@ -401,8 +410,10 @@
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
                                 </div>
+
+
                             </div>
                             <div class="tab-pane" id="tabs21-3" style="height: 100%">
                                 <div class="tab-pane-content-1"
@@ -420,7 +431,7 @@
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20150610211937_28458.png" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
                                 </div>
                             </div>
                         </div>

@@ -32,14 +32,6 @@
     /*background-color: white;*/
 }
 
-.line2 .line21 #line2-head1, .line2 .line21 #line2-head2 {
-    border-right: solid #d61b21;
-}
-
-#line2-head2{
-    border-right: solid #d61b21;
-
-}
 .line2 .line21 #line2-head1 {
     left: 0;
 }
