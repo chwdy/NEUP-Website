@@ -261,6 +261,8 @@
                     <li data-target="#myCarousel" data-slide-to="0" type="circle" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1" type="circle"></li>
                     <li data-target="#myCarousel" data-slide-to="2" type="circle"></li>
+                    <li data-target="#myCarousel" data-slide-to="3" type="circle"></li>
+                    <li data-target="#myCarousel" data-slide-to="4" type="circle"></li>
                 </div>
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner" style="height: 100%;">
@@ -268,6 +270,16 @@
                         <img src="<?php bloginfo('template_url'); ?>/images/20151020221927_21947.png" alt="First slide"
                              style="height: 100%;width: 100%">
                         <div class="carousel-caption" id="carousel-caption1"><p>管院学子在第八届网商创新应用大赛辽宁赛区决赛中喜获佳绩</p></div>
+                    </div>
+                    <div class="item" style="height: 100%">
+                        <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide"
+                             style="height: 100%;width: 100%">
+                        <div class="carousel-caption" id="carousel-caption2"><p>中荷学院第八届团委学生会工作总结暨第九届团委学生会主席团换</p></div>
+                    </div>
+                    <div class="item" style="height: 100%">
+                        <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide"
+                             style="height: 100%;width:100%">
+                        <div class="carousel-caption" id="carousel-caption3"><p>“唱响红色旋律 构建和谐社区”七一文艺汇演成功参演</p></div>
                     </div>
                     <div class="item" style="height: 100%">
                         <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide"
@@ -347,9 +359,9 @@
                     <div class="row" style="height: 100%;width:100%;margin: 0;">
                         <div class="line21-head" style="height: 14%;">
                             <ul class="nav-tabs nav" id="tabs1" style="height: 100%;width: 100%;">
-                                <li class="line2-active"><a href="#tabs21-1" id="line2-head1" onclick="return false">活力支部</a></li>
-                                <li><a href="#tabs21-2" id="line2-head2" onclick="return false">魅力团干</a></li>
-                                <li><a href="#tabs21-3" id="line2-head3" onclick="return false">缤纷社团</a></li>
+                                <li class="active"><a href="#tabs21-1" id="line2-head1" onclick="return false" style="border-radius: 0">活力支部</a></li>
+                                <li><a href="#tabs21-2" id="line2-head2" onclick="return false" style="border-radius: 0">魅力团干</a></li>
+                                <li><a href="#tabs21-3" id="line2-head3" onclick="return false" style="border-radius: 0">缤纷社团</a></li>
                             </ul>
                         </div>
                         <div class="line2-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
@@ -357,27 +369,59 @@
                             <div class="tab-pane active" id="tabs21-1" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
-                                    <ul style="padding-left: 6%;font-size:smaller;line-height: 150%;">
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
-                                        <li><a href="#" target="_blank">关于举办2016年"创青春"全国大举办于</a><span>03-30</span></li>
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
                                         <div class="clear"></div>
                                     </ul>
                                 </div>
                                 <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
                                     <img
-                                        src="<?php echo bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png">
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
                                 </div>
                             </div>
-                            <div class="tab-pane" id="tabs21-2">
-                                魅力团干内容...
+                            <div class="tab-pane" id="tabs21-2" style="height: 100%">
+                                <div class="tab-pane-content-1"
+                                     style="width: 57%;height: 100%;float: left">
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
+                                    <img
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                </div>
                             </div>
-                            <div class="tab-pane" id="tabs21-3">
-                                缤纷社团内容...
+                            <div class="tab-pane" id="tabs21-3" style="height: 100%">
+                                <div class="tab-pane-content-1"
+                                     style="width: 57%;height: 100%;float: left">
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane-content-2" style="width: 43%;float: right;height: 100%">
+                                    <img
+                                        src="<?php echo bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" style="height:87%;margin-top: 4%;margin-bottom: 8%;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -391,7 +435,7 @@
                         <div class="row" style="height: 100%;width: 100%;margin: 0;padding: 0">
                             <div class="line22-head" style="height: 14%;width: 100%;">
                                 <ul class="nav-tabs nav" id="tabs22" style="height: 100%;">
-                                    <li class="line22-active" style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-1" id="line22-head1" onclick="return false" style="padding: 0;">思想引领行动</a></li>
+                                    <li class="active" style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-1" id="line22-head1" onclick="return false" style="padding: 0;">思想引领行动</a></li>
                                     <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-2" id="line22-head2" onclick="return false" style="padding: 0">素质拓展行动</a></li>
                                     <li style="width: 24.5%;text-align: center;margin-right: 0.6%;border-right: solid #d61b21;"><a href="#tabs22-3" id="line22-head3" onclick="return false" style="padding: 0">权益服务行动</a></li>
                                     <li style="width: 24.5%;text-align: center;float: right;"><a href="#tabs22-4" id="line22-head4" onclick="return false" style="padding: 0">组织提升行动</a></li>
@@ -447,52 +491,66 @@
         </div>
         <div class="line23" >
             <div class="line23-head" style="height: 12% ;background-color: white">
-                <ul class="nav-tabs nav" id="tabs23" style="height: 100%;width: 100%">
-                    <li class="line221-active" style="width: 50%;text-align: center;"><a href="#tabs23-1" style="font-weight: bolder;">活动预告</a></li>
-                    <li style="width: 50%;text-align: center;;"><a href="#tabs23-2">投稿排行</a></li>
+                <ul class="nav-tabs nav" id="tabs23" style="height: 100%;width: 100%;">
+                    <li class="active" style="width: 50%;text-align: center;"><a href="#tabs23-1" style="font-weight: bolder;border-radius: 0">活动预告</a></li>
+                    <li style="width: 50%;text-align: center;;"><a href="#tabs23-2" style="font-weight: bolder;border-radius: 0">投稿排行</a></li>
                 </ul>
             </div>
             <div class="line23-container" style="height: 1%;background-color: rgb(242,130,68)"></div>
-            <div class="tab-content" id="line23-tab-content" style="height: 88%">
+            <div class="tab-content" id="line23-tab-content" style="height: 88%;border: solid 2px rgb(237,238,239)">
                 <div class="tab-pane active" id="tabs23-1" style="height: 100%">
-                    <div style="height: 33.9%;border-bottom: dotted;background-color: white" >
+                    <div style="height: 32%;background-color: white" >
                         <div style="width: 32.1%;height: 100%;float: left;">
                             <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
                                 <div id="month0" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
                                 <div id="day0" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
                             </div>
                         </div>
-                        <div style="width: 67.2%;height: 100%;float: right;">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                        <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 1.5%">
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96);"><p style="margin:0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
                         </div>
                     </div>
-                    <div style="height: 32.6%;border-bottom: dotted;background-color: white">
+                    <div style="border-bottom: dotted;width: 94%;margin-left: 3%"></div>
+                    <div style="height: 32%;background-color: white">
                         <div style="width: 32.1%;height: 100%;float: left;">
                             <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
                                 <div id="month1" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
                                 <div id="day1" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
                             </div>
                         </div>
-                        <div style="width: 67.2%;height: 100%;float: right;background-color: white">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                        <div style="width: 67.2%;height: 100%;float: right;background-color: white;line-height: 140%;padding-top: 2%;">
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
 
                         </div>
                     </div>
-
-                    <div style="height: 33%;bottom: 0;">
+                    <div style="border-bottom: dotted;width: 94%;margin-left: 3%"></div>
+                    <div style="height: 32%;bottom: 2%;">
                         <div style="width: 32.1%;height: 100%;float: left;">
                             <div id="date" style="height: 90%;width: 90%;padding-top: 10%;padding-left: 10%">
                                 <div id="month2" style="background-color: rgb(240,90,87);color: white;height: 29%;font-size: smaller;text-align: center;"></div>
                                 <div id="day2" style="background-color: rgb(238,239,240);color: black;height: 71%;text-align: center;font-size: xx-large;line-height:110%;overflow:hidden;"></div>
                             </div>
                         </div>
-                        <div style="width: 67.2%;height: 100%;float: right;">
-                            <a><span style="font-size: smaller;float: right;padding-right: 5%;color: rgb(240,100,96)">关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                        <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 2%">
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
 
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" id="tabs23-2" style="height: 100%">投稿排行内容</div>
+                <div class="tab-pane" id="tabs23-2" style="height: 100%;background-color: white">
+                    <div style="height: 100%;width: 13%;float: left;margin-left: 2%">
+                        <img src="<?php echo bloginfo('template_url'); ?>/images/dot5.jpg" style="height: 90%;float: right;margin-right: 15%;margin-top: 25%">
+                    </div>
+                    <div style="height: 100%;width: 85%;float: right" class="line23-2" >
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                        <a>计算机科学与工程学院</a><span>(500篇)</span>
+                    </div>
+                </div>
             </div>
         </div>
 

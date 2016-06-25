@@ -36,6 +36,10 @@
     border-right: solid #d61b21;
 }
 
+#line2-head2{
+    border-right: solid #d61b21;
+
+}
 .line2 .line21 #line2-head1 {
     left: 0;
 }
@@ -53,15 +57,14 @@
 }
 
 .line2 .line21 .tab-pane-content-2 img {
-    margin-top: 5%;
     width: 100%;
+    margin-top: 2%;
 }
 
-.line2 .line21 #tabs1 a:hover {
-    background-color: #f05a57;
+#tabs1 a:hover {
+    background-color: rgb(240,90,87);
     color: white;
 }
-
 .line2 .line21 .tab-pane-content-1 a {
     text-decoration: none;
 }
@@ -82,6 +85,7 @@
 }
 .line2 .line22 {
     width: 46%;
+    height: 100%;
     height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
@@ -169,5 +173,47 @@
 }
 #line32b-head a{
     color: black;
+}
+
+
+#tabs1 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+#tabs22 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+#tabs23 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+.line23-2 a{
+    float: left;
+    text-decoration: none;
+    color:black;
+}
+.line23-2 span{
+    float: right;
+    text-decoration: none;
+    margin-right: 5%;
+}
+.line23-2{
+    line-height: 190%;
+    padding-top: 2%;
+}
+#tabs23-1 span{
+    float: right;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+#line21-tab-content span{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 /*# sourceMappingURL=line2.css.map */
