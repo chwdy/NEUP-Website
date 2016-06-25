@@ -296,15 +296,14 @@
 				<a href="#" target="_blank" class="ainline12c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留守儿童，估算约1亿的消息上了微博热搜榜，
 				随后，各大媒体官号相继转发，这源于中国青年报中青在线的一篇题为“我国将首次摸清留守儿童底数”的报道。（点击看全文）</a>
 			</div>
-			<div class="line12d">
-			  <ul class="disc">
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-			  </ul>
+			<div class="line12d">..................................................................................</div>
+			<div class="line12e">
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
 			</div>
 			
         </div>
@@ -314,17 +313,15 @@
 			<div class="line13a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line13b"></div>
 			<div class="line13c">
-				<ul class="disc">
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-					<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				</ul>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
 			</div>
         </div>
         <div class="line14">
@@ -333,13 +330,11 @@
 			<div class="line14a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line14b"></div>
 			<div class="line14c">
-			<ul class="disc14">
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-				<li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li>
-			</ul>
+			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
+			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
+			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
+			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
+			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
 			</div>
         </div>
     </div>
@@ -571,6 +566,7 @@
             <div class="line34a"><a href="#" target="_blank" class="ainline3">专题二 青年之声</a></div>
         </div>
         <div class="line35">
+			<div class="line35a1"></div>
             <div class="line35a">活动专题</div>
             <div class="line35b"></div>
             <div class="line35c" >
