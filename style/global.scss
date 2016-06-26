@@ -51,7 +51,10 @@ footer (91.5)
     background-repeat: no-repeat;
     background-size: auto;
 }
-
+ul,button {
+    margin: 0;
+    padding: 0;
+}
 $media: screen;
 $feature: -webkit-min-device-pixel-ratio;
 $value: 1.5;

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link href="./style/bootstrap.min.css" rel="stylesheet">
+    <link href="./style/bootstrap-datepicker3.standalone.css" rel="stylesheet" />
+    <link href="./style/default.css" rel="stylesheet">
+    <link href="./style/swiper-3.3.1.min.css" rel="stylesheet">
+    <link href="./style/ublue_ImageCarousel.css" rel="stylesheet">
+
+    <link href="./style/article.css" rel="stylesheet">
+
+    <script src="./js/jquery-2.2.3.js"></script>
+    <script src="./js/respond.min.js"></script>
+    <script src="./js/animenu.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+<title>无标题文档</title>
+</head>
+
+
+<body onload="getmyDate();">
+    <div class="header">
+        <div class = "banner">
+            <form class="bs-example bs-example-form" id="serarch_form" role="form" method="get" action="">
+            <!-- action = <?php echo $_SERVER['PHP_SELF']; ?> -->
+                <!-- <?php get_search_form(); ?> -->
+                <!-- http://down.chinaz.com/try/201202/1644_1.htm -->
+            <div class="input-group">
+            <!-- <input type="text" class="form-control"> -->
+            <input class="form-control" name="s" id="s" type="search-box" class="text" />
+
+             <span class="input-group-addon submit" type="submit"><button id="searchsubmit" type="submit" class="btn submit" type="button">Go!</button></span>
+            </div>
+
+            </form>
+
+        </div>
+        <nav class="menubar animenu">
+            <button class="animenu__toggle" id="menu_btn" onclick="
+
+            alert("ok")"
+        >
+              <span class="animenu__toggle__bar"></span>
+              <span class="animenu__toggle__bar"></span>
+              <span class="animenu__toggle__bar"></span>
+            </button>
+            <ul class="nav nav-justified animenu__nav" id = "navbar">
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="menucolor">先锋首页</a>
+                  </li>
+
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">东大共青团 </a>
+                      <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
+                        <li><a href="#" class="submenucolor">团委简介</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">机构设置</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">工作职责</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">光辉历程</a></li>
+                        <!-- <li class="dropdown-header">Dropdown header</li> -->
+
+                      </ul>
+                  </li>
+
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">学生组织 </a>
+                      <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
+                        <li><a href="#" class="submenucolor">学生会</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">研究生会</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">社团联合会</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">志愿者协会</a></li>
+                        <!-- <li class="dropdown-header">Dropdown header</li> -->
+
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">网上团支部 </a>
+                      <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
+                        <li><a href="#" class="submenucolor">网上团支部</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">支部博客联盟</a></li>
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="#" class="submenucolor">团日视频展播</a></li>
+
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="menucolor">青年之声</a>
+                  </li>
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="menucolor">先锋论坛</a>
+                  </li>
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                    <a href="#" class="menucolor">文件下载</a>
+                    </li>
+                  <li class="dropdown">
+                      <ul class="dropdown-menu top-of-item">
+                      </ul>
+                      <a href="#" class="menucolor">友情链接
+                          <!-- <b class="caret"></b> -->
+                      </a>
+                  </li>
+              </ul>
+        </nav>
+    </div>
+
+<div class="article">
+  <div class="left">
+  
+</div>
+<div class="right">
+  
+</div>
+</div>
+
+    <footer class = "footer">
+            <nav >
+        <ul class="footer-list">
+            <li class = "footer-link" >
+            <a href="#">旧版入口</a>
+            </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li class = "footer-link">
+            <a href="#">网站纠错</a>
+            </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <li class = "footer-link">
+            <a href="#">联系我们</a>
+        </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <li class = "footer-link">
+            <a href="#">设为首页</a>
+        </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <li class = "footer-link">
+            <a href="#">站内入口</a>
+        </li>
+        </ul>
+    </nav>
+    <nav class="footer-info" id="footer_left">
+
+        <p class="text">版权所有: 共青团东北大学委员会  |  地址：辽宁省沈阳市和平区文化路三巷11号  |  邮编：110819  |  辽ICP备05001360号  |  Northeastern University 2016  |  设计制作：<a href="#" target="_blank">团委</a>，技术运维：<a href="http://network.neu.edu.cn" target="_blank">网络中心</a> </p>
+        <!-- 
+        <p class =" text">今日访问量: <?php echo wp_statistics_visitor("today")?> 次 | 本周访问量: <?php echo wp_statistics_visitor("week") ?>次 | 本站总访问量: <?php echo wp_statistics_countusers() ?> 次</p> -->
+
+    </nav>
+
+<nav class="footer-sns">
+
+    <a class="weixin" href="#" target="_blank">
+        <ul class="content">
+            <li class="img"></li>
+            <li class="text">东北大学团委官方微信<br>neutuanwei123</li>
+            <li class="wechat-qrcode"></li>
+        </ul>
+    </a>
+    <a class="weibo" href="#" target="_blank">
+        <ul class="content">
+        <li class="img"></li>
+        <li class="text">东北大学团委官方微博<br>neutuanwei123</li>
+        </ul>
+    </a>
+    <a class="tx-weibo" href="#" target="_blank">
+        <ul class="content">
+        <li class="img"></li>
+        <li class="text">东北大学团委官方微博<br>sadsfgh</li>
+        </ul>
+    </a>
+
+</nav>
+
+    </footer>
+
+
+</body>
+
+
+</html>

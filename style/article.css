@@ -1,0 +1,500 @@
+ul, button {
+  margin: 0;
+  padding: 0; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+@media screen {
+  body {
+    /*
+      REMEMBER update header.css first
+      because global include them
+    */ } }
+  @media screen and (min-width: 1367px) and (max-width: 1899px) {
+    body {
+      overflow-x: hidden;
+      border: solid 1px blue;
+      padding-top: 0;
+      width: 100%;
+      overflow: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      height: 850px; } }
+  @media screen and (min-width: 1900px) {
+    body {
+      overflow-x: hidden;
+      border: solid 1px blue;
+      padding-top: 0;
+      width: 100%;
+      overflow: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      height: 980px; } }
+  @media screen and (max-width: 1366px) {
+    body {
+      overflow-x: hidden;
+      border: solid 1px blue;
+      padding-top: 0;
+      width: 100%;
+      overflow: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      height: 700px; } }
+  @media screen and (max-width: 480px) {
+    body {
+      overflow-x: hidden;
+      border: solid 1px blue;
+      padding-top: 0;
+      width: 100%;
+      overflow: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      height: 2600px; } }
+@media screen {
+    body .animenu__toggle {
+      display: none;
+      cursor: pointer;
+      background-color: #111;
+      border: 0;
+      padding: 10px;
+      height: 40px;
+      width: 40px; }
+      body .animenu__toggle:hover {
+        background-color: #0186ba; }
+    body .animenu__toggle__bar {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff; }
+      body .animenu__toggle__bar + .animenu__toggle__bar {
+        margin-top: 4px; }
+    body .animenu__toggle--active .animenu__toggle__bar {
+      margin: 0;
+      position: absolute; }
+      body .animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+        transform: rotate(45deg); }
+      body .animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+        opacity: 0; }
+      body .animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+        transform: rotate(-45deg); }
+    body .animenu {
+      display: block; }
+      body .animenu li, body .animenu a {
+        font-size: 15px; }
+      body .animenu a {
+        color: white; }
+    body .animenu__nav__child {
+      min-width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      background-color: red; }
+      body .animenu__nav__child > li {
+        width: 100%; }
+        body .animenu__nav__child > li:first-child > a:after {
+          content: '';
+          position: absolute;
+          height: 0;
+          left: 1em;
+          top: -6px;
+          border: 6px solid transparent;
+          border-top: 0;
+          border-bottom-color: inherit; }
+        body .animenu__nav__child > li:last-child {
+          border: 0; }
+      body .animenu__nav__child a {
+        width: 100%;
+        border-color: #ff828c; }
+        body .animenu__nav__child a:hover {
+          background-color: #ff828c;
+          border-color: #ff828c;
+          color: #fff; }
+    body .header {
+      position: relative;
+      width: 100%;
+      height: 20%;
+      /*border: solid 1px red;*/
+      margin-bottom: 0.5%; }
+      body .header .banner {
+        height: 71.92982%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background: url(../images/banner.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative; }
+        body .header .banner #serarch_form {
+          position: absolute;
+          margin-bottom: 0px;
+          margin-left: 86%;
+          margin-right: 3%;
+          margin-top: 5.7%;
+          height: 100%; }
+          body .header .banner #serarch_form .input-group .form-control {
+            font-size: 10px;
+            min-height: 0px;
+            height: 22px; }
+          body .header .banner #serarch_form .input-group .input-group-addon {
+            padding: 0px; }
+            body .header .banner #serarch_form .input-group .input-group-addon .btn {
+              height: 22px;
+              padding: 0px 0px; }
+      body .header nav .menubar {
+        height: 18.85965%;
+        bottom: 0;
+        background-color: red; }
+      body .header .top-of-item {
+        bottom: 98.85965%;
+        min-width: 40px;
+        width: 100%;
+        height: 5%;
+        background-color: red;
+        color: red;
+        position: absolute; }
+    body .dropdown-menu {
+      width: 100%;
+      background-color: red;
+      margin-top: 1%;
+      border-radius: 0px; }
+      body .dropdown-menu li a {
+        color: white; }
+      body .dropdown-menu .submenucolor {
+        text-align: center;
+        background-color: red;
+        color: white;
+        padding-bottom: 4%;
+        animation: flip 2s; }
+    body .menucolor {
+      color: white;
+      background-color: red; }
+    body .menucolor:hover {
+      background-color: white; }
+    body .submenucolor:hover {
+      color: white; }
+    body .dropdown-menu {
+      display: none; }
+    body .nav li:hover .menucolor {
+      background-color: #ff828c;
+      color: white; }
+    body .nav li:hover .dropdown-menu, body .nav li:hover .animenu__nav__child {
+      display: block; }
+    body .nav li:hover ul {
+      display: block; }
+    body .container {
+      padding: 40px; } }
+  @media only screen and (max-width: 480px) {
+    body .header {
+      border: solid 1px red;
+      /*min-height: 30%;*/
+      height: 4%;
+      width: 100%; }
+    body .animenu__toggle {
+      display: inline-block; }
+    body .animenu__nav, body .animenu__nav__child {
+      z-index: 2000;
+      display: block; }
+    body .animenu__nav {
+      margin: 10px 0; }
+      body .animenu__nav > li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #515151; }
+        body .animenu__nav > li:last-child {
+          border: 0; }
+        body .animenu__nav > li:first-child > a:after {
+          content: '';
+          position: absolute;
+          height: 0;
+          width: 0;
+          left: 1em;
+          top: -6px;
+          border-top: 0;
+          border-bottom-color: inherit; }
+        body .animenu__nav > li > a {
+          width: 100%;
+          border-color: #111;
+          position: relative; }
+      body .animenu__nav a:hover {
+        background-color: #0186ba;
+        border-color: #0186ba;
+        color: #fff; }
+    body .animenu__nav__child {
+      position: static;
+      background-color: #373737;
+      margin: 0;
+      transition: none;
+      visibility: visible;
+      opacity: 1; }
+      body .animenu__nav__child > li:first-child > a:after {
+        content: none; }
+      body .animenu__nav__child a {
+        padding-left: 20px;
+        width: 100%; } }
+@media screen {
+    body .animenu__nav--open {
+      display: block !important; }
+      body .animenu__nav--open .animenu__nav__child {
+        display: block; }
+    body .article {
+      border: solid 1px red;
+      height: 65%;
+      width: 100%;
+      zoom: 1; }
+      body .article .left {
+        border: solid 1px red;
+        height: 100%;
+        width: 18%;
+        margin-left: 6%;
+        margin-right: 0.5%;
+        float: left;
+        display: block; }
+      body .article .right {
+        border: solid 1px red;
+        height: 100%;
+        width: 68%;
+        margin-left: 0.5%;
+        float: left;
+        display: block; }
+    body .footer {
+      border: solid 1px red;
+      height: 13%;
+      width: 100%;
+      background-color: #de0023;
+      zoom: 1; }
+    body .footer-list {
+      margin: 0;
+      text-align: center;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      padding-left: 10px; }
+    body .footer-link {
+      color: #FFFFFF;
+      display: inline;
+      font-size: 15px;
+      padding-bottom: 4%;
+      padding-top: 8%;
+      text-align: center;
+      width: 70%;
+      list-style: none;
+      margin: auto; }
+      body .footer-link a:link {
+        color: #fff; }
+      body .footer-link a:visited {
+        color: #fff; }
+      body .footer-link a:hover {
+        color: #fff; }
+      body .footer-link a:active {
+        color: #fff; }
+    body .footer-info {
+      text-align: center;
+      padding-top: 3%;
+      padding-bottom: 0;
+      font-size: 5px;
+      color: white;
+      width: auto;
+      display: inline;
+      line-height: 60%; }
+      body .footer-info a:link {
+        color: #fff; }
+      body .footer-info a:visited {
+        color: #fff; }
+      body .footer-info a:hover {
+        color: #fff; }
+      body .footer-info a:active {
+        color: #fff; }
+    body .footer-sns {
+      text-align: center;
+      margin-bottom: 1%;
+      color: white;
+      padding: 0; }
+      body .footer-sns a:link {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:visited {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:hover {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:active {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a .text {
+        list-style: none;
+        display: inline-block;
+        margin-top: 0;
+        text-align: center;
+        font-size: 12px;
+        color: #fff; }
+      body .footer-sns .weixin .content {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0; }
+        body .footer-sns .weixin .content .img {
+          display: inline-block;
+          background: url("../images/weixin_icn.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+        body .footer-sns .weixin .content .wechat-qrcode {
+          display: inline-block;
+          background: url("../images/wechat-qrcode.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+      body .footer-sns .weibo .content {
+        list-style: none;
+        display: inline;
+        margin-top: 0;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 0; }
+        body .footer-sns .weibo .content .img {
+          display: inline-block;
+          background: url("../images/weibo_icn.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+      body .footer-sns .tx-weibo .content {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0; }
+        body .footer-sns .tx-weibo .content .img {
+          display: inline-block;
+          background: url("../images/tx_weibo_icn.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; } }
+  @media only screen and (max-width: 480px) {
+    body .footer {
+      border: solid 1px red;
+      height: 40%;
+      width: 100%;
+      background-color: #de0023;
+      margin-bottom: 6%; }
+    body .footer-list {
+      margin: 0;
+      display: inline;
+      text-align: center; }
+    body .footer-link {
+      color: #FFFFFF;
+      display: table;
+      font-size: 12%;
+      padding-bottom: 0;
+      padding-top: 0;
+      text-align: center;
+      width: 85%;
+      list-style: none;
+      margin: auto; }
+      body .footer-link a:link {
+        color: #fff; }
+      body .footer-link a:visited {
+        color: #fff; }
+      body .footer-link a:hover {
+        color: #fff; }
+      body .footer-link a:active {
+        color: #fff; }
+    body .footer-info {
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 2px;
+      font-size: 5px;
+      color: white;
+      width: 85%;
+      display: inline;
+      line-height: 110%; }
+      body .footer-info a:link {
+        color: #fff; }
+      body .footer-info a:visited {
+        color: #fff; }
+      body .footer-info a:hover {
+        color: #fff; }
+      body .footer-info a:active {
+        color: #fff; }
+      body .footer-info .text {
+        margin-left: 4%;
+        margin-right: 4%; }
+    body .footer-sns {
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0; }
+      body .footer-sns a:link {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:visited {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:hover {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a:active {
+        text-decoration: none;
+        color: #fff; }
+      body .footer-sns a .text {
+        list-style: none;
+        display: block;
+        margin-top: 0;
+        text-align: center;
+        font-size: 12px;
+        color: #fff; }
+      body .footer-sns .weixin .content {
+        list-style: none;
+        display: block;
+        margin-top: 5%;
+        padding: 0; }
+        body .footer-sns .weixin .content .img {
+          display: inline-block;
+          background-image: url("../images/weixin_icn.png");
+          background-repeat: no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+        body .footer-sns .weixin .content .wechat-qrcode {
+          display: inline-block;
+          background: url("../images/wechat-qrcode.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+      body .footer-sns .weibo .content {
+        list-style: none;
+        display: block;
+        margin-top: 5%;
+        padding: 0; }
+        body .footer-sns .weibo .content .img {
+          display: inline-block;
+          background: url("../images/weibo_icn.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; }
+      body .footer-sns .tx-weibo .content {
+        list-style: none;
+        display: block;
+        margin-top: 5%;
+        padding: 0; }
+        body .footer-sns .tx-weibo .content .img {
+          display: inline-block;
+          background: url("../images/tx_weibo_icn.png") no-repeat;
+          background-size: 25px 25px;
+          height: 25px;
+          width: 25px; } }
+
+.frame {
+  overflow: hidden; }
+
+.wholehtml {
+  background-image: url(../images/red_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto; }
+
+/*# sourceMappingURL=article.css.map */

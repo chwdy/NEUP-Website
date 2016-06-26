@@ -1,0 +1,108 @@
+@mixin body{
+    //padding-top: 65px;
+    //height: 1080px;
+    overflow-x: hidden;
+    border:solid 1px blue;
+    padding-top: 0;
+
+    //height: 1000px;
+    //-80px for browser's top bar
+
+    width: 100%;
+    // margin-left: 5%;
+    overflow: auto;
+    //min-height: 700px;
+    //min-width: 1700px;
+    //background-image: url(../images/white.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+ul,button {
+    margin: 0;
+    padding: 0;
+}
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+@media #{$media} {
+
+    body{
+        @media (min-width: 1367px) and (max-width: 1899px){
+            //1600 is in it!!!
+            @include body;
+            height: 850px;
+            // background-color: red;
+
+        }
+
+        @media (min-width: 1900px){
+
+            @include body;
+            height: 980px;
+            //1920 is in here
+            //  background-color: blue;
+        }
+        @media (max-width: 1366px){
+            //laptop
+            @include body;
+            height: 700px;
+            //768-60
+        }
+         @media (max-width: 480px){
+            //laptop
+            @include body;
+            height: 2600px;
+            //background-color: blue;
+
+        }
+            @import "header.scss";
+            .article {
+              border: solid 1px red;
+              height: 65%;
+              width: 100%;
+              zoom: 1;
+            //   position: relative;
+              .left{
+                  border: solid 1px red;
+                  height: 100%;
+                  width: 18%;
+                  margin-left: 6%;
+                  margin-right: 0.5%;
+                  float: left;
+                  display: block;
+              }
+              .right{
+                  border: solid 1px red;
+                  height: 100%;
+                  width: 68%;
+                  margin-left: 0.5%;
+                //   margin-right: 6%;
+                  float: left;
+                  display: block;
+              }
+            }
+
+            @import "footer.scss";
+            /*
+              REMEMBER update header.css first
+              because global include them
+            */
+    }
+
+}
+.frame {
+    overflow: hidden;
+}
+
+.wholehtml {
+    background-image: url(../images/red_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}

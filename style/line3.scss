@@ -14,7 +14,7 @@
         margin-bottom: 0.3%;
         zoom:1;
         //overflow: hidden;
-        position:relative; 
+        position:relative;
 
         .line31{
             width: 11.5%-0.5%;
@@ -28,10 +28,32 @@
         .line33{
             width: 57.5%-34.1%;
             @include back_color;
+            position: relative;
+        	background: url(../images/4_2.png);
+            background-repeat: no-repeat;
+            /*background-position:-875px -620px;*/
+            background-size: contain;
+        }
+        .line33a{
+          position:absolute;
+          top:40%;
+          width:100%;
+          text-align:center;
         }
         .line34{
             width: 80%-57.7%;
             @include back_color;
+            position: relative;
+            background: url(../images/4_3.png);
+            background-repeat: no-repeat;
+            /*background-position:-875px -620px;*/
+            background-size: contain
+        }
+        .line34a{
+          position:absolute;
+          top:40%;
+          width:100%;
+          text-align:center;
         }
         .line35{
             @include back_color;
@@ -41,13 +63,67 @@
             position:absolute;
             bottom:0px;
         }
+        .line35a {
+          position: absolute;
+          left: 3%;
+          top: 5%;
+          width: 100%;
+          height: 20%;
+          line-height:100%;
+          font-weight:bold;
+          font-size:16px;
+          color: #F00;
+        }
+        .line35b {
+          position: absolute;
+          left: 0;
+          top: 22.5%;
+          width: 100%;
+          height: 1%;
+          background-color: #f47122;
+        }
+        .line35c {
+          position: absolute;
+          left: 0%;
+          top: 0%;
+          width: 100%;
+          height: 100%;
+        }
+        .line35c1 {
+          position: absolute;
+          left: 6%;
+          top: 27.5%;
+          width: 100%;
+          height: 100%;
+        }
+
+        .line35c2 {
+          position: absolute;
+          left: 6%;
+          top: 51.1%;
+          width: 100%;
+          height: 100%;
+        }
+
+        .line35c3 {
+          position: absolute;
+          left: 6%;
+          top: 74.4%;
+          width: 100%;
+          height: 100%;
+        }
+        .ainline3{
+          color: #F00;
+          font-size:18px;
+          font-weight:bold;
+        }
 /*
         &:after{
             content: ".";
             display: block;
             height: 0;
             clear: both;
-            visibility: hidden; 
+            visibility: hidden;
         }
         */
     }
@@ -61,7 +137,7 @@
                 //margin-top: 0.2%;
                 //margin-bottom: 0.2%;
                 zoom:1;
-                .line31, .line32, .line33, .line34, .line35{ 
+                .line31, .line32, .line33, .line34, .line35{
                     border: solid 1px blue;
                     float: left;
                     display: block;
@@ -70,6 +146,6 @@
                     margin-top: 0.5%;
                     margin-left:1%;
                 }
-            } 
-    
+            }
+
 }

@@ -179,7 +179,17 @@
 <body onload="getmyDate();">
     <div class="header">
         <div class = "banner">
+          <form class="bs-example bs-example-form" id="serarch_form" role="form" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <!-- <?php get_search_form(); ?> -->
+                <!-- http://down.chinaz.com/try/201202/1644_1.htm -->
+            <div class="input-group">
+            <!-- <input type="text" class="form-control"> -->
+            <input class="form-control" name="s" id="s" type="search-box" class="text" />
 
+             <span class="input-group-addon submit" type="submit"><button id="searchsubmit" type="submit" class="btn submit" type="button">Go!</button></span>
+            </div>
+
+            </form>
         </div>
         <nav class="menubar animenu">
             <button class="animenu__toggle" id="menu_btn" onclick="
@@ -817,8 +827,29 @@
     </div> <!-- /container -->
 
     <div class="line3">
-        <div class="line31">
-            31
+        
+            <div class="line31">
+            <!-- <aside id="weibo" class="widget" style="height: 100%;width: 100%"> -->
+                 <!-- <h1 class="widget-title"><?php _e( 'Weibo', 'skirmish' ); ?></h1> -->
+                 <ul class="nav-tabs nav" id="tabs31" style="height: 14%;width: 100%;background-color:#ff4040;">
+                     <li class="line221-active" style="width: 50%;height: 100%;text-align: center;background-color:#ff4040;"><a href="#tabs31-1" style="height: 100%;padding: 0px 0px;color:white;background-color:#ff4040;">新浪微博</a></li>
+                     <li style="width: 50%;text-align: center;height: 100%;background-color:#ff4040;"><a href="#tabs31-2" style="height: 100%;padding: 0px 0px;color:white;background-color:#ff4040;">腾讯微博</a></li>
+                 </ul>
+                 <div class="tab-content" id="line31-tab-content" style="height: 84%">
+                     <div class="tab-pane active" id="tabs31-1" style="height: 100%">
+                         <iframe width="100%" height="100%" class="share_self"  frameborder="0" scrolling="yes"
+                         src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=0&fansRow=0&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2256094682&verifier=cc31d438&dpc=1"></iframe>
+
+                     </div>
+                     <div class="tab-pane" id="tabs31-2" style="height: 100%">
+                         <iframe width="100%" height="100%" class="share_self"  frameborder="0" scrolling="yes"
+                         src="http://show.v.t.qq.com/index.php?c=show&a=index&n=dbdxrj1405&o=31&co=0&o=1"></iframe>
+
+                     </div>
+                 </div>
+
+            <!-- </aside> -->
+        
         </div>
         <div class="line32">
             <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
