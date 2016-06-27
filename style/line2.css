@@ -1,64 +1,122 @@
-<<<<<<< HEAD
 .line2 {
-  border: solid 1px red;
-  height: 21.8%;
-  /*min-height: 30%;*/
-  width: 100%;
-  margin-top: 0.3%;
-  margin-bottom: 0.3%;
-  position: relative;
-  zoom: 1; }
-  .line2 .line21 {
-    width: 33%;
+    border: solid 1px red;
+    height: 21.8%;
+    /*min-height: 30%;*/
+    width: 100%;
+    margin-top: 0.3%;
+    margin-bottom: 0.3%;
+    position: relative;
+    zoom: 1;
+}
+
+.line2 .line21 {
+    width: 33.2%;
     height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
     float: left;
-    display: block; }
-    .line2 .line21 #line2-head1, .line2 .line21 #line2-head2, .line2 .line21 #line2-head3 {
-      padding: 0; }
-    .line2 .line21 .line21-head li {
-      height: 100%;
-      width: 33%;
-      margin-left: 0.1%;
-      margin-right: 0.1%;
-      text-align: center;
-      /*border-right: solid rgb(214,27,33);*/
-      /*background-color: white;*/ }
-    .line2 .line21 #line2-head1, .line2 .line21 #line2-head2 {
-      border-right: solid #d61b21; }
-    .line2 .line21 #line2-head1 {
-      left: 0; }
-    .line2 .line21 #line2-head3 {
-      float: right;
-      right: 0; }
-    .line2 .line21 .line21-head a {
-      height: 100%;
-      width: 100%;
-      color: #d9110b;
-      margin: 0; }
-    .line2 .line21 .tab-pane-content-2 img {
-      margin-top: 5%;
-      width: 100%; }
-    .line2 .line21 #tabs1 a:hover {
-      background-color: #f05a57;
-      color: white; }
-    .line2 .line21 .tab-pane-content-1 a {
-      text-decoration: none; }
-    .line2 .line21 .tab-pane-content-1 span {
-      margin-left: 2%; }
-    .line2 .line21 .tab-pane-content-1 li {
-      margin: 0;
-      padding: 0;
-      text-decoration: none; }
-  .line2 .line22 {
+    display: block;
+}
+
+.line2 .line21 #line2-head1, .line2 .line21 #line2-head2, .line2 .line21 #line2-head3 {
+    padding: 0;
+}
+
+.line21-head li {
+    height: 100%;
+    width: 33.3%;
+    text-align: center;
+    /*border-right: solid rgb(214,27,33);*/
+    /*background-color: white;*/
+}
+
+.line2 .line21 #line2-head1 {
+    left: 0;
+}
+
+.line2 .line21 #line2-head3 {
+    float: right;
+    right: 0;
+}
+
+.line2 .line21 .line21-head a {
+    height: 100%;
+    width: 100%;
+    color: #d9110b;
+    margin: 0;
+}
+
+.line2 .line21 .tab-pane-content-2 img {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#tabs1 a:hover {
+    background-color: rgb(240,90,87);
+    color: white;
+}
+.line2 .line21 .tab-pane-content-1 a {
+    text-decoration: none;
+}
+
+.line2 .line21 .tab-pane-content-1 span {
+    margin-left: 2%;
+}
+
+.line2 .line21 .tab-pane-content-1 li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.tab-pane-content-1 a{
+    color: black;
+}
+.line2 .line22 {
     width: 46%;
     height: 100%;
+    height: 100%;
     border: solid 1px blue;
     margin-left: 0.4%;
     float: left;
-    display: block; }
-  .line2 .line23 {
+    display: block;
+}
+
+.line22-head a{
+    color: #d9110b;
+    border: none;
+}
+.line22 #tabs22 a:hover {
+    background-color: #f05a57;
+    color: white;
+}
+#tabs221,#tabs222,#tabs223,#tabs224{
+    height: 100%;
+}
+
+#tabs221 a,
+#tabs222 a,
+#tabs223 a,
+#tabs224 a{
+    padding: 0;
+    line-height: 200%;
+    color: rgb(240,100,96)
+
+}
+
+
+#line22-left-tab-content a{
+    color: black;
+}
+
+#tabs22 a,
+#tabs1 a,
+#tabs23 a{
+    font-weight: bolder;
+    color: #d9110b;
+}
+.line2 .line23 {
     width: 19.2%;
     height: 100%;
     border: solid 1px blue;
@@ -69,123 +127,90 @@
     height: 122%;
     margin-bottom: 3%;
     position: absolute;
-    bottom: 0px; }
+    bottom: 0px;
+}
 
+#tabs23 a{
+    height: 100%;
+    padding: 0;
+}
+#tabs23 a:hover {
+    background-color: #f05a57;
+    color: white;
+}
 @media only screen and (max-width: 480px) {
-  .line2 {
-    border: solid 1px red;
-    /*min-height: 30%;*/
-    height: 29%;
-    width: 100%;
-    margin-top: 0.2%;
-    margin-bottom: 0.2%;
-    position: static;
-    zoom: 1; }
-    .line2 .line21, .line2 .line22, .line2 .line23 {
-      position: static;
-      border: solid 1px blue;
-      float: left;
-      display: block;
-      width: 98%;
-      height: 33%;
-      margin-top: 0.5%;
-      margin-left: 1%;
-      bottom: 0px; } }
+    .line2 {
+        border: solid 1px red;
+        /*min-height: 30%;*/
+        height: 29%;
+        width: 100%;
+        margin-top: 0.2%;
+        margin-bottom: 0.2%;
+        position: static;
+        zoom: 1;
+    }
 
-/*# sourceMappingURL=line2.css.map */
-=======
-.line2 {
-  border: solid 1px red;
-  height: 21.8%;
-  /*min-height: 30%;*/
-  width: 100%;
-  margin-top: 0.3%;
-  margin-bottom: 0.3%;
-  position: relative;
-  zoom: 1; }
-  .line2 .line21 {
-    width: 33%;
-    height: 100%;
-    border: solid 1px blue;
-    margin-left: 0.4%;
+    .line2 .line21, .line2 .line22, .line2 .line23 {
+        position: static;
+        border: solid 1px blue;
+        float: left;
+        display: block;
+        width: 98%;
+        height: 33%;
+        margin-top: 0.5%;
+        margin-left: 1%;
+        bottom: 0px;
+    }
+}
+#line32b-head a{
+    color: black;
+}
+
+
+#tabs1 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+#tabs22 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+#tabs23 .active a{
+    background-color: #f05a57;
+    color: white;
+}
+.line23-2 a{
     float: left;
-    display: block; }
-    .line2 .line21 #line2-head1, .line2 .line21 #line2-head2, .line2 .line21 #line2-head3 {
-      padding: 0; }
-    .line2 .line21 .line21-head li {
-      height: 100%;
-      width: 33%;
-      margin-left: 0.1%;
-      margin-right: 0.1%;
-      text-align: center;
-      /*border-right: solid rgb(214,27,33);*/
-      /*background-color: white;*/ }
-    .line2 .line21 #line2-head1, .line2 .line21 #line2-head2 {
-      border-right: solid #d61b21; }
-    .line2 .line21 #line2-head1 {
-      left: 0; }
-    .line2 .line21 #line2-head3 {
-      float: right;
-      right: 0; }
-    .line2 .line21 .line21-head a {
-      height: 100%;
-      width: 100%;
-      color: #d9110b;
-      margin: 0; }
-    .line2 .line21 .tab-pane-content-2 img {
-      margin-top: 5%;
-      width: 100%; }
-    .line2 .line21 #tabs1 a:hover {
-      background-color: #f05a57;
-      color: white; }
-    .line2 .line21 .tab-pane-content-1 a {
-      text-decoration: none; }
-    .line2 .line21 .tab-pane-content-1 span {
-      margin-left: 2%; }
-    .line2 .line21 .tab-pane-content-1 li {
-      margin: 0;
-      padding: 0;
-      text-decoration: none; }
-  .line2 .line22 {
-    width: 46%;
-    height: 100%;
-    border: solid 1px blue;
-    margin-left: 0.4%;
-    float: left;
-    display: block; }
-  .line2 .line23 {
-    width: 19.2%;
-    height: 100%;
-    border: solid 1px blue;
-    margin-left: 0.4%;
-    float: left;
+    text-decoration: none;
+    color:black;
+}
+.line23-2 span{
+    float: right;
+    text-decoration: none;
+    margin-right: 5%;
+}
+.line23-2{
+    line-height: 190%;
+    padding-top: 2%;
+}
+#tabs23-1 span{
+    float: right;
     display: block;
-    margin-left: 80.4%;
-    height: 122%;
-    margin-bottom: 3%;
-    position: absolute;
-    bottom: 0px; }
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
-@media only screen and (max-width: 480px) {
-  .line2 {
-    border: solid 1px red;
-    /*min-height: 30%;*/
-    height: 29%;
-    width: 100%;
-    margin-top: 0.2%;
-    margin-bottom: 0.2%;
-    position: static;
-    zoom: 1; }
-    .line2 .line21, .line2 .line22, .line2 .line23 {
-      position: static;
-      border: solid 1px blue;
-      float: left;
-      display: block;
-      width: 98%;
-      height: 33%;
-      margin-top: 0.5%;
-      margin-left: 1%;
-      bottom: 0px; } }
-
+}
+#line21-tab-content span{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#line22-left-tab-content span{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 /*# sourceMappingURL=line2.css.map */
->>>>>>> 24cac1b2b0b819a5c738ac405e8c51e6497069e4
