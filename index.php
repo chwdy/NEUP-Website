@@ -1,3 +1,18 @@
+<?php
+$title1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'title1'");
+$title2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'title2'");
+$title3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'title3'");
+$place1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place1'");
+$place2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place2'");
+$place3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place3'");
+$time1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time3'");
+$time2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time2'");
+$time3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time3'");
+$link1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link1'");
+$link2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link2'");
+$link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link3'");
+?>
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -328,20 +343,25 @@
 			<div class="line12a2"></div>
 			<div class="line12a"><p>先锋头条</p></div>
 			<div class="line12a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
+			<?php
+    								$newcat_id = 5; 
+    								$recent = new WP_Query("showposts=1&cat=".$newcat_id);
+    								while($recent->have_posts()): $recent->the_post();
+									?>
             <div class="line12b"></div>
 			<div class="line12c">
-				<a href="#" target="_blank" class="ainline12c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留守儿童，估算约1亿的消息上了微博热搜榜，
-				随后，各大媒体官号相继转发，这源于中国青年报中青在线的一篇题为“我国将首次摸清留守儿童底数”的报道。（点击看全文）</a>
+				<a href="<?php the_permalink() ?>" target="_blank" class="ainline12c"><?php the_excerpt();?>（点击看全文）</a>
+				<?php   endwhile; wp_reset_query();  ?>
 			</div>
+
 			<div class="line12d">..................................................................................</div>
 			<div class="line12e">
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line12e1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-			</div>
+						<ul class="disc"><?php
+    								$newcat_id = 5; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()): $recent->the_post();
+									?><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?>
+									</a></li><?php   endwhile; wp_reset_query();  ?></ul></div>
 			
         </div>
       	<div class="line13">
@@ -350,29 +370,25 @@
 			<div class="line13a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line13b"></div>
 			<div class="line13c">
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
-				<div class="line13c1"><ul class="disc"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span style="float: right">03-28</span></li></ul></div>
+					<ul class="disc"><?php
+    								$newcat_id = 6; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()): $recent->the_post();
+									?><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?>
+			  						<?php   endwhile; wp_reset_query();  ?></a></li></ul></div>
 			</div>
-        </div>
         <div class="line14">
 			<div class="line14a2"></div>
             <div class="line14a"><p>通知公告</p></div>
 			<div class="line14a1"><a href="#" target="_blank" class="ainline1">more>></a></div>
             <div class="line14b"></div>
 			<div class="line14c">
-			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
-			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
-			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
-			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
-			  <div class="line14c1"><ul class="disc14"><li><a href="#" target="_blank" class="ainline1">科技日报关于2016年全将首次模的报报道道</a><span>03-28</span></li></ul></div>
-			</div>
+			 <ul class="disc14"><?php
+    								$newcat_id = 7; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()): $recent->the_post();
+									?><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?>
+			  						<?php   endwhile; wp_reset_query();  ?></a></li></ul></div>
         </div>
     </div>
 
@@ -395,13 +411,13 @@
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                    <?php
+    								$newcat_id = 2; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()) : $recent->the_post();
+									?>
+                                        <a title="<?php the_title(); ?> " href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"></p>
+                                        <?php   endwhile; wp_reset_query();  ?>
                                         <div class="clear"></div>
                                     </ul>
                                 </div>
@@ -414,13 +430,13 @@
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <?php
+    								$newcat_id = 3; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()) : $recent->the_post();
+									?>
+                                        <a title="<?php the_title(); ?> " href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"></p>
+                                        <?php   endwhile; wp_reset_query();  ?>
                                         <div class="clear"></div>
                                     </ul>
                                 </div>
@@ -433,13 +449,13 @@
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                        <a href="#" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>关于举办2016年"创青春"全国大举办关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于关于举办2016年"创青春"全国大举办于于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <?php
+    								$newcat_id = 4; 
+    								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    								while($recent->have_posts()) : $recent->the_post();
+									?>
+                                        <a title="<?php the_title(); ?> " href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"></p>
+                                        <?php   endwhile; wp_reset_query();  ?>
                                         <div class="clear"></div>
                                     </ul>
                                 </div>
@@ -481,14 +497,13 @@
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs221-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-
+                                            <?php
+    										$newcat_id = 8; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
                                                 <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
@@ -496,13 +511,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs221-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 12; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -511,13 +526,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs221-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 13; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -526,13 +541,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs221-4" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 14; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -541,13 +557,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs221-5" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 15; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -569,13 +586,13 @@
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs222-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 9; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -584,13 +601,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs222-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 16; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -599,13 +616,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs222-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                               <?php
+    										$newcat_id = 17; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -614,13 +631,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs222-4" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 18; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -629,13 +646,13 @@
                                         </div>
                                         <div class="tab-pane" id="tabs222-5" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 19; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -655,13 +672,14 @@
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs223-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 10; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
                                                 <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
@@ -669,13 +687,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs223-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 20; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
                                                 <img src="<?php bloginfo('template_url'); ?>/images/20151117213432_74563.jpg" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
@@ -683,13 +702,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs223-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 21; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
                                                 <img src="<?php bloginfo('template_url'); ?>/images/1657B9A7-C380-46B2-9F8C-DEC8EF51D8AA.png" alt="Third slide" style="width:100%;height:87%;margin-top: 5%;margin-bottom: 8%;">
@@ -708,13 +728,14 @@
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 88.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs224-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 11; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -723,13 +744,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs224-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 22; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -738,13 +760,14 @@
                                         </div>
                                         <div class="tab-pane" id="tabs224-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
-                                                <a href="#" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p>中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于中国青年报东北大学将首次摸清留的报道到的倾情于</span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php
+    										$newcat_id = 23; 
+    										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
+    										while($recent->have_posts()) : $recent->the_post();
+											?>
+                                                <a title="<?php the_title()?>" href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <?php   endwhile; wp_reset_query();  ?>
+
 
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -777,7 +800,7 @@
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 1.5%">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96);"><p style="margin:0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96);"><p style="margin:0;float: left;width: 5%">·</p><?php echo($title1)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time1") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place1)?></span></a>
                         </div>
                     </div>
                     <div style="border-bottom: dotted;width: 94%;margin-left: 3%"></div>
@@ -789,7 +812,7 @@
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;background-color: white;line-height: 140%;padding-top: 2%;">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title2)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time2") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place2)?></span></a>
 
                         </div>
                     </div>
@@ -802,7 +825,7 @@
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 2%">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p>关于举办2016年"创青春"举办会</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">时间:3月28日 上午9:00</span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:东大东大东大东大东大</span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title3)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;"><?php echo($place3)?></span></a>
 
                         </div>
                     </div>
