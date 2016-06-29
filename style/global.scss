@@ -95,9 +95,9 @@ $value: 1.5;
 
         }
             @import "header.scss";
-            @import "line1.scss";
-            @import "line2.scss";
-            @import "line3.scss";
+            // @import "line1.css";
+            // @import "line2.css";
+            // @import "line3.css";
             @import "footer.scss";
             /*
               REMEMBER update header.css first
@@ -115,4 +115,9 @@ $value: 1.5;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+html, body, * { font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif;}
+
+body, .header, .line1, .line2, .line3, .footer {
+    border-style: none;
 }

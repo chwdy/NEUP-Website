@@ -5,6 +5,7 @@
 
 ---  
 ## TODO  
+* [ ] **implement article page**
 * [x] implement footer
 * [x] bootstrap.carousel with picture   
 * [x] put it in .php

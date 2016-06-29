@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 .line3 {
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   height: 15.5%;
   width: 100%;
   margin-top: 0.3%;
@@ -19,21 +19,21 @@
   .line3 .line31 {
     width: 11%;
     height: 100%;
-    border: solid 1px blue;
-    margin-left: 0.4%;
+    /*border: solid 1px blue;*/
+    margin-left: 0.3%;
     float: left;
     display: block; }
   .line3 .line32 {
-    width: 21.6%;
+    width: 22.2%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block; }
   .line3 .line33 {
     width: 23.4%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -50,7 +50,7 @@
   .line3 .line34 {
     width: 22.3%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -66,14 +66,14 @@
     text-align: center; }
   .line3 .line35 {
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
-    width: 19.2%;
+    width: 18.8%;
     margin-left: 80.4%;
     height: 134%;
-    position: absolute;
+    position: relative;
     bottom: 0px; }
   .line3 .line35a {
     position: absolute;
@@ -123,13 +123,13 @@
 
 @media only screen and (max-width: 480px) {
   .line3 {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     /*min-height: 30%;*/
     height: 29%;
     width: 100%;
     zoom: 1; }
     .line3 .line31, .line3 .line32, .line3 .line33, .line3 .line34, .line3 .line35 {
-      border: solid 1px blue;
+      /*border: solid 1px blue;*/
       float: left;
       display: block;
       width: 98%;
@@ -140,8 +140,8 @@
 /*# sourceMappingURL=line3.css.map */
 =======
 .line3 {
-  border: solid 1px red;
-  height: 15.5%;
+  /*border: solid 1px red;*/
+  height: 14%;
   width: 100%;
   margin-top: 0.3%;
   margin-bottom: 0.3%;
@@ -159,21 +159,21 @@
   .line3 .line31 {
     width: 11%;
     height: 100%;
-    border: solid 1px blue;
-    margin-left: 0.4%;
+    /*border: solid 1px blue;*/
+    margin-left: 0.3%;
     float: left;
     display: block; }
   .line3 .line32 {
-    width: 21.6%;
+    width: 22.2%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block; }
   .line3 .line33 {
     width: 23.4%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -190,7 +190,7 @@
   .line3 .line34 {
     width: 22.3%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -206,7 +206,7 @@
     text-align: center; }
   .line3 .line35 {
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -276,6 +276,3 @@
       height: 19%;
       margin-top: 0.5%;
       margin-left: 1%; } }
-
-/*# sourceMappingURL=line3.css.map */
->>>>>>> 24cac1b2b0b819a5c738ac405e8c51e6497069e4

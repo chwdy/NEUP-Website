@@ -56,7 +56,7 @@ $gutter: 10px;                      // Base gutter
 
   li, a {
     // display: inline-block;
-    font-size: 15px;
+    font-size: 115%;
   }
 
   a {
@@ -125,7 +125,7 @@ $gutter: 10px;                      // Base gutter
     width: 100%;
     height: 20%;
     /*border: solid 1px red;*/
-    margin-bottom: 0.5%;
+    margin-bottom: 1%;
 
     .banner{
         //width: 100%;
@@ -134,29 +134,39 @@ $gutter: 10px;                      // Base gutter
         //bottom: 0;
         //padding-bottom: 0;
         margin-top: 0%;
-        margin-bottom: 0%;
+        margin-bottom: 0.5%;
         background: url(../images/banner.png);
         @include background_conf;
         position: relative;
         #serarch_form{
             position: absolute;
-            margin-bottom:0px;
-            margin-left: 86%;
-            margin-right: 3%;
+            width: 12%;
+            margin-bottom: 0px;
+            margin-left: 87%;
+            margin-right: 2%;
             margin-top: 5.7%;
             height: 100%;
             .input-group{
-                // height: 15%;
+                position: absolute;
+                // margin-bottom: 90%;
+                min-height: 0px;
+                min-height: 0px;
+                height: 2%;
                 .form-control{
-                    font-size: 10px;
+                    font-size: 112%;
                     // line-height: 20px;
                     min-height: 0px;
-                    height: 22px;
+                    // height: 22px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    height:100%;
+                    border: none;
                 }
                 .input-group-addon{
                     .btn{
-                        height: 22px;
+                        // height: 22px;
                         padding: 0px 0px;
+                        height:100%;
                     }
                     padding:0px;
                 }
@@ -197,6 +207,7 @@ $gutter: 10px;                      // Base gutter
 	margin-top: 1%;
 //	margin: 0px, 0, 0;
 	border-radius: 0px;
+    // box-shadow:1px 1px 1px #CC0000 ;
     li a{
         color: white;
     }
@@ -207,6 +218,8 @@ $gutter: 10px;                      // Base gutter
         padding-bottom: 4%;
         // opacity: 0.9;
         animation: flip 2s;
+        font-size: 112%;
+        font-family: Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1","MicrosoftJhengHei",STHeiti,MingLiu, Serif;
     }
 
 }
@@ -214,15 +227,21 @@ $gutter: 10px;                      // Base gutter
 .menucolor{
     color:white;
     background-color: red;
+    font-size: 112%;
+    font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif;
 }
 
 .menucolor:hover{
     // background-color: rgb(255, 130, 140);
     background-color: white;
+    font-size: 112%;
+    font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif;
 }
 .submenucolor:hover{
     // background-color: rgb(255, 130, 140);
     color: white;
+    font-size: 112%;
+    font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif;
 }
 
 
@@ -234,6 +253,8 @@ $gutter: 10px;                      // Base gutter
         .menucolor{
             background-color: rgb(255, 130, 140);
             color: white;
+            font-size: 112%;
+            font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif;
         }
         .dropdown-menu, .animenu__nav__child{
             display:block;

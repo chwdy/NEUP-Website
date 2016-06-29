@@ -75,6 +75,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 $(this).tab('show');
             });
         })
+        $(function(){
+            $("#tabs31 a").mousemove(function (e) {
+                $(this).tab('show');
+            });
+        })
     </script>
     <script>
         $(function() {
@@ -184,7 +189,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                    navbar_item.css("display","block");
                 }
             });
-     
+
         });
     </script>
 <title>无标题文档</title>
@@ -199,16 +204,18 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 <!-- http://down.chinaz.com/try/201202/1644_1.htm -->
             <div class="input-group">
             <!-- <input type="text" class="form-control"> -->
-            <input class="form-control" name="s" id="s" type="search-box" class="text" />
+            <input class="form-control" name="s" id="s" type="search" results="s" class="text"/>
 
-             <span class="input-group-addon submit" type="submit"><button id="searchsubmit" type="submit" class="btn submit" type="button">搜索</button></span>
+             <span class="input-group-addon submit" type="submit">
+                 <!-- <button id="searchsubmit" type="submit" class="btn submit" type="button">搜索</button> -->
+             </span>
             </div>
 
             </form>
         </div>
         <nav class="menubar animenu">
             <button class="animenu__toggle" id="menu_btn" onclick="
-            
+
             alert("ok")"
         >
               <span class="animenu__toggle__bar"></span>
@@ -286,7 +293,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                   <li class="dropdown">
                       <ul class="dropdown-menu top-of-item">
                       </ul>
-                      <a href="#" class="menucolor">友情链接<b class="caret"></b></a>
+                      <a href="#" class="menucolor">友情链接</a>
                   </li>
               </ul>
         </nav>
@@ -835,13 +842,13 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     </div> <!-- /container -->
 
     <div class="line3">
-        
+
             <div class="line31">
             <!-- <aside id="weibo" class="widget" style="height: 100%;width: 100%"> -->
                  <!-- <h1 class="widget-title"><?php _e( 'Weibo', 'skirmish' ); ?></h1> -->
-                 <ul class="nav-tabs nav" id="tabs31" style="height: 14%;width: 100%;background-color:#ff4040;">
-                     <li class="line221-active" style="width: 50%;height: 100%;text-align: center;background-color:#ff4040;"><a href="#tabs31-1" style="height: 100%;padding: 0px 0px;color:white;background-color:#ff4040;">新浪微博</a></li>
-                     <li style="width: 50%;text-align: center;height: 100%;background-color:#ff4040;"><a href="#tabs31-2" style="height: 100%;padding: 0px 0px;color:white;background-color:#ff4040;">腾讯微博</a></li>
+                 <ul class="nav-tabs nav" id="tabs31" style="height: 14%;width: 100%;background-color:#f05a57;">
+                     <li class="line221-active" style="width: 50%;height: 100%;text-align: center;background-color:#f05a57;"><a href="#tabs31-1" style="height: 100%;padding: 0px 0px;color:white;background-color:#f05a57;">新浪微博</a></li>
+                     <li style="width: 50%;text-align: center;height: 100%;background-color:#f05a57;"><a href="#tabs31-2" style="height: 100%;padding: 0px 0px;color:white;background-color:#f05a57;">腾讯微博</a></li>
                  </ul>
                  <div class="tab-content" id="line31-tab-content" style="height: 84%">
                      <div class="tab-pane active" id="tabs31-1" style="height: 100%">
@@ -857,7 +864,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                  </div>
 
             <!-- </aside> -->
-        
+
         </div>
         <div class="line32">
             <div class="line32a" style="width: 100%;height: 3%;background-color: #f35853;"></div>
