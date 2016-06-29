@@ -5,12 +5,13 @@ $title3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE opti
 $place1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place1'");
 $place2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place2'");
 $place3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'place3'");
-$time1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time3'");
+$time1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time1'");
 $time2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time2'");
 $time3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time3'");
 $link1 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link1'");
 $link2 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link2'");
 $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'link3'");
+  $pictures = get_option("neup_picture");
 ?>
 
 <!DOCTYPE html>
@@ -127,7 +128,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
             var day_text0 =document.getElementById('day0'),
                 day_text1 =document.getElementById('day1'),
                 day_text2 =document.getElementById('day2');
-            // 获取时间
+            /*// 获取时间
             var nowDate = new Date(),
                 nextDate = new Date(nowDate.getTime()+24*60*60*1000),  //明天
                 nextnextDate = new Date(nextDate.getTime()+24*60*60*1000);    //后天
@@ -140,8 +141,18 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 date1 = nextDate.getDate();
             var year2 = nextnextDate.getFullYear(),
                 month2 = nextnextDate.getMonth(),
-                date2 = nextnextDate.getDate();
-            var Monthes = [ "一月", "二月", "三月", "四月", "五月", "六月", "七月","八月","九月","十月","十一月","十二月" ];
+                date2 = nextnextDate.getDate();*/
+            var year0 = <?php echo substr($time1, 0, 4); ?>,
+                month0 = <?php if(substr($time1, 5, 2) < 10) echo substr($time1, 6, 1); else echo substr($time1, 5, 2); ?>,
+                date0 = <?php if(substr($time1, 8, 2) < 10) echo substr($time1, 9, 1); else echo substr($time1, 8, 2); ?>;
+            var year1 = <?php echo substr($time2, 0, 4); ?>,
+                month1 = <?php if(substr($time2, 5, 2) < 10) echo substr($time2, 6, 1); else echo substr($time2, 5, 2); ?>,
+                date1 = <?php if(substr($time2, 8, 2) < 10) echo substr($time2, 9, 1); else echo substr($time2, 8, 2); ?>;
+            var year2 = <?php echo substr($time3, 0, 4); ?>,
+                month2 = <?php if(substr($time3, 5, 2) < 10) echo substr($time3, 6, 1); else echo substr($time3, 5, 2); ?>,
+                date2 = <?php if(substr($time3, 8, 2) < 10) echo substr($time3, 9, 1); else echo substr($time3, 8, 2); ?>;
+
+            var Monthes = [ "", "一月", "二月", "三月", "四月", "五月", "六月", "七月","八月","九月","十月","十一月","十二月" ];
             month_text0.innerHTML=Monthes[month0];
             day_text0.innerHTML=date0;
             month_text1.innerHTML=Monthes[month1];
@@ -314,29 +325,29 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner" style="height: 100%;">
                     <div class="item active" style="height: 100%;">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20151020221927_21947.png" alt="First slide"
+                        <img src="<?php echo $pictures['top_left_picture1']; ?>" alt="First slide"
                              style="height: 100%;width: 100%">
-                        <div class="carousel-caption" id="carousel-caption1"><p>管院学子在第八届网商创新应用大赛辽宁赛区决赛中喜获佳绩</p></div>
+                        <div class="carousel-caption" id="carousel-caption1"><p><?php echo $pictures["top_left_content1"]; ?></p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide"
+                        <img src="<?php echo $pictures['top_left_picture2']; ?>" alt="Second slide"
                              style="height: 100%;width: 100%">
-                        <div class="carousel-caption" id="carousel-caption2"><p>中荷学院第八届团委学生会工作总结暨第九届团委学生会主席团换</p></div>
+                        <div class="carousel-caption" id="carousel-caption2"><p><?php echo $pictures["top_left_content2"]; ?></p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide"
+                        <img src="<?php echo $pictures['top_left_picture3']; ?>" alt="Third slide"
                              style="height: 100%;width:100%">
-                        <div class="carousel-caption" id="carousel-caption3"><p>“唱响红色旋律 构建和谐社区”七一文艺汇演成功参演</p></div>
+                        <div class="carousel-caption" id="carousel-caption3"><p><?php echo $pictures["top_left_content3"]; ?></p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150610211937_28458.png" alt="Second slide"
+                        <img src="<?php echo $pictures['top_left_picture4']; ?>" alt="Second slide"
                              style="height: 100%;width: 100%">
-                        <div class="carousel-caption" id="carousel-caption2"><p>中荷学院第八届团委学生会工作总结暨第九届团委学生会主席团换</p></div>
+                        <div class="carousel-caption" id="carousel-caption2"><p><?php echo $pictures["top_left_content4"]; ?></p></div>
                     </div>
                     <div class="item" style="height: 100%">
-                        <img src="<?php bloginfo('template_url'); ?>/images/20150628210741_34025.jpg" alt="Third slide"
+                        <img src="<?php echo $pictures['top_left_picture5']; ?>" alt="Third slide"
                              style="height: 100%;width:100%">
-                        <div class="carousel-caption" id="carousel-caption3"><p>“唱响红色旋律 构建和谐社区”七一文艺汇演成功参演</p></div>
+                        <div class="carousel-caption" id="carousel-caption3"><p><?php echo $pictures["top_left_content5"]; ?></p></div>
                     </div>
                 </div>
                 <!-- 轮播（Carousel）导航 -->
@@ -353,22 +364,22 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 <div class="line12b"></div>
     			<div class="line12c">
             <?php
-                $newcat_id = 5;
-                $recent = new WP_Query("showposts=1&cat=".$newcat_id);
-                while($recent->have_posts()): $recent->the_post();
+                $cat_name = "先锋头条";
+                $query = new WP_Query("posts_per_page=1&category_name=".$cat_name);
+                while($query->have_posts()): $query->the_post();
             ?>
-    				<a href="<?php the_permalink() ?>" target="_blank" class="ainline12c"><?php the_excerpt();?>（点击看全文）</a>
+    				<a href="<?php the_permalink() ?>" target="_blank" class="ainline12c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo get_the_excerpt();?>（点击看全文）</a>
     				<?php endwhile; wp_reset_query(); ?>
     			</div>
 
     			<div class="line12d">..................................................................................</div>
     			<div class="line12e">
                 <?php
-        						$newcat_id = 5;
-        						$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-        						while($recent->have_posts()): $recent->the_post();
+        						$cat_name = "先锋头条";
+        						$query = new WP_Query("posts_per_page=6&category_name=".$cat_name);
+        						while($query->have_posts()): $query->the_post();
     						?>
-                <div class="line12e1"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span style="float: right">03-28</span></li></ul></div>
+                <div class="line12e1"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span style="float: right"><?php the_time("m-d"); ?></span></li></ul></div>
                 <?php endwhile; wp_reset_query(); ?>
           </div>
         </div>
@@ -379,11 +390,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 <div class="line13b"></div>
     			<div class="line13c">
               <?php
-        					$newcat_id = 6;
-        					$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-        					while($recent->have_posts()): $recent->the_post();
+        					$cat_name = "学院团训";
+        					$query = new WP_Query("posts_per_page=9&category_name=".$cat_name);
+        					while($query->have_posts()): $query->the_post();
     					?>
-              <div class="line13c1"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span style="float: right">03-28</span></li></ul></div>
+              <div class="line13c1"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span style="float: right"><?php the_time("m-d"); ?></span></li></ul></div>
     			  	<?php endwhile; wp_reset_query(); ?>
     			</div>
         </div>
@@ -394,11 +405,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                 <div class="line14b"></div>
     			<div class="line14c">
             <?php
-        				$newcat_id = 7;
-        				$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-        				while($recent->have_posts()): $recent->the_post();
+        				$cat_name = "通知公告";
+        				$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
+        				while($query->have_posts()): $query->the_post();
     				?>
-            <div class="line14c1"><ul class="disc14"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span>03-28</span></li></ul></div>
+            <div class="line14c1"><ul class="disc14"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a><span><?php the_time("m-d"); ?></span></li></ul></div>
     			  <?php endwhile; wp_reset_query(); ?>
           </div>
         </div>
@@ -424,11 +435,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
                                     <?php
-                        								$newcat_id = 2;
-                        								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                        								while($recent->have_posts()) : $recent->the_post();
+                        								$cat_name = "活力支部";
+                        								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                        								while($query->have_posts()) : $query->the_post();
                     									?>
-                                      <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                      <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                       <?php endwhile; wp_reset_query(); ?>
                                         <div class="clear"></div>
                                     </ul>
@@ -443,11 +454,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
                                         <?php
-                          								$newcat_id = 3;
-                          								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                          								while($recent->have_posts()) : $recent->the_post();
+                          								$cat_name = "魅力团干";
+                          								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                          								while($query->have_posts()) : $query->the_post();
                       									?>
-                                        <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                         <?php endwhile; wp_reset_query(); ?>
                                         <div class="clear"></div>
                                     </ul>
@@ -462,11 +473,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                      style="width: 57%;height: 100%;float: left">
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
                                         <?php
-                          								$newcat_id = 4;
-                          								$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                          								while($recent->have_posts()) : $recent->the_post();
+                          								$cat_name = "缤纷社团";
+                          								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                          								while($query->have_posts()) : $query->the_post();
                       									?>
-                                        <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                        <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                         <?php endwhile; wp_reset_query(); ?>
                                         <div class="clear"></div>
                                     </ul>
@@ -510,11 +521,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane active" id="tabs221-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 8;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "主题团日";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -524,11 +535,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs221-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 12;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "四进四信";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -538,11 +549,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs221-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 13;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "青马工程";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -552,11 +563,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs221-4" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 14;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "社会实践";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -566,11 +577,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs221-5" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 15;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "智惠社区";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -593,11 +604,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane active" id="tabs222-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 9;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "创新创业";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -607,11 +618,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs222-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 16;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "能力拓展";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -621,11 +632,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs222-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              									  $newcat_id = 17;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              									  $cat_name = "校园文化";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -635,11 +646,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs222-4" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 18;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "缤纷社团";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -649,11 +660,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs222-5" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 19;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "青春三走";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -674,11 +685,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane active" id="tabs223-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 10;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "校长接待日";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -688,11 +699,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs223-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 20;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "提案反馈";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -702,11 +713,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs223-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 21;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "出彩东大人";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -727,11 +738,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane active" id="tabs224-1" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 11;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "活力支部";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -741,11 +752,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs224-2" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 22;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "学生组织";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -755,11 +766,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                         <div class="tab-pane" id="tabs224-3" style="height: 100%">
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
                                                 <?php
-                              										$newcat_id = 23;
-                              										$recent = new WP_Query("showposts=20&cat=".$newcat_id);
-                              										while($recent->have_posts()) : $recent->the_post();
+                              										$cat_name = "青年教工";
+                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%">03-30</p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">·</p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -792,7 +803,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 1.5%">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96);"><p style="margin:0;float: left;width: 5%">·</p><?php echo($title1)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time1") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place1)?></span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96);"><p style="margin:0;float: left;width: 5%">·</p><?php echo($title1)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("T"," ", "$time1") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place1)?></span></a>
                         </div>
                     </div>
                     <div style="border-bottom: dotted;width: 94%;margin-left: 3%"></div>
@@ -804,7 +815,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;background-color: white;line-height: 140%;padding-top: 2%;">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title2)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time2") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place2)?></span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title2)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("T"," ", "$time2") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place2)?></span></a>
 
                         </div>
                     </div>
@@ -817,7 +828,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             </div>
                         </div>
                         <div style="width: 67.2%;height: 100%;float: right;line-height: 140%;padding-top: 2%">
-                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title3)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("","T", "$time") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place3)?></span></a>
+                            <a><span style="font-size: smaller;float: right;width: 100%;padding-right: 5%;color: rgb(240,100,96)"><p style="margin: 0;float: left;width: 5%">·</p><?php echo($title3)?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">具体时间:<?php echo str_replace("T"," ", "$time3") ?></span><span style="font-size: smaller;float: right;padding-right: 5%;color: black;">地点:<?php echo($place3)?></span></a>
 
                         </div>
                     </div>
@@ -920,9 +931,9 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
             <div class="line35b"></div>
             <div class="line35c" >
 				<ul style="list-style-type: none">
-                    <div class="line35c1"> <a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_4.png" border="0" width="84.6%" height="19.3%"></a></div>
-                    <div class="line35c2"><a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_5.png" border="0" width="84.6%" height="19.3%"></a></div>
-                    <div class="line35c3"><a target="_blank" href="#"><img src="<?php echo bloginfo('template_url'); ?>/images/Snip20160525_6.png" border="0"  width="84.6%" height="19.3%"></a></div>
+                    <div class="line35c1"> <a target="_blank" href="<?php echo $pictures["activity_url1"]; ?>"><img src="<?php echo $pictures["activity_picture1"]; ?>" border="0" width="84.6%" height="19.3%"></a></div>
+                    <div class="line35c2"><a target="_blank" href="<?php echo $pictures["activity_url2"]; ?>"><img src="<?php echo $pictures["activity_picture2"]; ?>" border="0" width="84.6%" height="19.3%"></a></div>
+                    <div class="line35c3"><a target="_blank" href="<?php echo $pictures["activity_url3"]; ?>"><img src="<?php echo $pictures["activity_picture3"]; ?>" border="0"  width="84.6%" height="19.3%"></a></div>
                 </ul>
             </div>
         </div>
