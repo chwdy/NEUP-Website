@@ -1,6 +1,6 @@
 .line1 {
   position: relative;
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   height: 27.5%;
   width: 100%;
   margin-top: 0.3%;
@@ -20,7 +20,7 @@
   .line1 .line11 {
     width: 33.2%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block; }
@@ -28,7 +28,7 @@
 	position: relative;
     width: 23.4%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left; 
     display: block; }
@@ -103,7 +103,7 @@
 	position: relative;
     width: 22.3%;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block; }
@@ -169,7 +169,7 @@
   .line1 .line14 {
 	position: relative;
     height: 100%;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin-left: 0.4%;
     float: left;
     display: block;
@@ -253,7 +253,8 @@
 
 .carousel-inner {
   height: 100%;
-  border-radius: 5px; }
+  border-radius: 5px; 
+}
 
 .item {
   height: 100%;
@@ -284,13 +285,13 @@
 
 @media only screen and (max-width: 480px) {
   .line1 {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     /*min-height: 30%;*/
     height: 29%;
     width: 100%;
     zoom: 1; }
     .line1 .line11, .line1 .line12, .line1 .line13, .line1 .line14 {
-      border: solid 1px blue;
+      /*border: solid 1px blue;*/
       float: left;
       display: block;
       width: 98%;
