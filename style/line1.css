@@ -145,9 +145,11 @@
     bottom: 0;
     width: 100%;
     height: 85%;
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding-right:7px; 
+    -o-text-overflow: ellipsis;
   }
   .line13c1{
 	left:0;
@@ -156,12 +158,19 @@
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
+	padding-right:7px; 
+        -o-text-overflow: ellipsis;
   }
   .disc{
 	list-style-type: disc;
     font-size: 12px;
 	padding-left:6%;
 	line-height:150%;
+		white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding-right:7px; 
+       -o-text-overflow: ellipsis;
   }
   .ainline1{
 	color: #000000;
@@ -221,6 +230,8 @@
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
+	padding-right:7px; 
+    -o-text-overflow: ellipsis;
   }
   .disc14{
 	list-style-type: disc;
@@ -229,6 +240,8 @@
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
+	padding-right:7px; 
+    -o-text-overflow: ellipsis;
   }
 .carousel-caption {
   position: absolute;
