@@ -87,7 +87,7 @@
     color: #F00; }
   .line3 .line35b {
     position: absolute;
-    left: 0;
+    left: 0%;
     top: 22.5%;
     width: 100%;
     height: 1%;
@@ -187,6 +187,12 @@
     top: 40%;
     width: 100%;
     text-align: center; }
+  .line3 .line33a1{
+	position: absolute;
+	width:100%;
+	height:3%;
+	background-color:#FF0000;
+  }
   .line3 .line34 {
     width: 22.3%;
     height: 100%;
@@ -204,6 +210,12 @@
     top: 40%;
     width: 100%;
     text-align: center; }
+  .line3 .line34a1{
+	position: absolute;
+	width:100%;
+	height:3%;
+	background-color:#FF0000;
+  }
   .line3 .line35 {
     height: 100%;
     /*border: solid 1px blue;*/
@@ -217,19 +229,27 @@
     bottom: 0px; }
   .line3 .line35a {
     position: absolute;
-    left: 3%;
-    top: 5%;
-    width: 100%;
+    left: 7%;
+    top: 10%;
+    width: 80%;
     height: 20%;
     line-height: 100%;
     font-weight: bold;
     font-size: 16px;
     color: #F00; }
+  .line3 .line35a1{
+	position: absolute;
+	left: 2%;
+    top: 10%;
+    width: 2%;
+    height: 10%;
+	background-color:#FF0000;
+  }
   .line3 .line35b {
     position: absolute;
-    left: 0;
-    top: 22.5%;
-    width: 100%;
+    left: 2%;
+    top: 25%;
+    width: 98%;
     height: 1%;
     background-color: #f47122; }
   .line3 .line35c {
