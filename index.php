@@ -372,7 +372,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     				<?php endwhile; wp_reset_query(); ?>
     			</div>
 
-    			<div class="line12d">..................................................................................</div>
+    			<div class="line12d">................................................................................................</div>
     			<div class="line12e">
                 <?php
         						$cat_name = "先锋头条";
@@ -920,9 +920,11 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
             </div>
         </div>
         <div class="line33">
+			<div class="line33a1"></div>
             <div class="line33a"><a href="#" target="_blank" class="ainline3">专题一 学习之路</a></div>
         </div>
         <div class="line34">
+			<div class="line34a1"></div>
             <div class="line34a"><a href="#" target="_blank" class="ainline3">专题二 青年之声</a></div>
         </div>
         <div class="line35">
@@ -944,3 +946,4 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     </footer>
 </body>
 </html>
+
