@@ -27,12 +27,20 @@
   .animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
     transform: rotate(-45deg); }
 
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: red; }
+
 .animenu {
   display: block; }
   .animenu li, .animenu a {
     font-size: 115%; }
   .animenu a {
     color: white; }
+  .animenu a:hover {
+    color: white;
+    background-color: #de0023; }
 
 .animenu__nav__child {
   min-width: 100%;
@@ -67,12 +75,11 @@
   width: 100%;
   height: 20%;
   /*border: solid 1px red;*/
-  margin-bottom: 1%; }
+  margin-bottom: 1.3%; }
   .header .banner {
     height: 71.92982%;
     margin-top: 0%;
     margin-bottom: 0.5%;
-    background: url(../images/banner.png);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,6 +98,7 @@
         min-height: 0px;
         height: 2%; }
         .header .banner #serarch_form .input-group .form-control {
+          border-radius: 17px;
           font-size: 112%;
           min-height: 0px;
           padding-top: 0;
@@ -121,10 +129,10 @@
   margin-top: 1%;
   border-radius: 0px; }
   .dropdown-menu li a {
-    color: white; }
+    color: #ff828c; }
   .dropdown-menu .submenucolor {
     text-align: center;
-    background-color: red;
+    background-color: #de0023;
     color: white;
     padding-bottom: 4%;
     animation: flip 2s;
@@ -132,20 +140,21 @@
     font-family: Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1","MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
 
 .menucolor {
-  color: white;
-  background-color: red;
+  color: #ff828c;
+  background-color: #de0023;
   font-size: 112%;
   font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
 
 .menucolor:hover {
-  background-color: white;
   font-size: 112%;
   font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
 
 .submenucolor:hover {
-  color: white;
   font-size: 112%;
   font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #de0023; }
 
 .dropdown-menu {
   display: none; }

@@ -210,19 +210,22 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
 <body onload="getmyDate();">
     <div class="header">
         <div class = "banner">
+
           <form class="bs-example bs-example-form" id="serarch_form" role="form" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <!-- <?php get_search_form(); ?> -->
                 <!-- http://down.chinaz.com/try/201202/1644_1.htm -->
             <div class="input-group">
             <!-- <input type="text" class="form-control"> -->
             <input class="form-control" name="s" id="s" type="search" results="s" class="text"/>
-
-             <span class="input-group-addon submit" type="submit">
-                 <!-- <button id="searchsubmit" type="submit" class="btn submit" type="button">搜索</button> -->
-             </span>
             </div>
 
             </form>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="100%" height="100%">
+            <param name="movie" value="<?php bloginfo('template_url'); ?>/images/banner.swf" />
+            <param name="quality" value="high" />
+            <PARAM NAME="SCALE" VALUE="exactfit">
+            <embed src="<?php bloginfo('template_url'); ?>/images/banner.swf" quality="high" type="application/x-shockwave-flash" width="100%" height="100%" SCALE="exactfit" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+            </object>
         </div>
         <nav class="menubar animenu">
             <button class="animenu__toggle" id="menu_btn" onclick="
@@ -946,4 +949,3 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     </footer>
 </body>
 </html>
-
