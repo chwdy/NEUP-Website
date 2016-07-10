@@ -84,25 +84,31 @@
     width: 100%;
     height:52%;
 	bottom:2%;
+	}
+    .line12e1{
+	
+	left:0;
+	width: 100%;
+	height:16.5%;
+  }
+    .line12e2{
+	position: absolute;
+	left:0;
+	width: 80%;
+	height:100%;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	padding-right:6%; 
-    -o-text-overflow: ellipsis;
-	}
-	.line12e1{
-	  left:0;
-	  width: 100%;
-	  height:17%;
-	  white-space:nowrap;
-	  overflow:hidden;
-	  text-overflow:ellipsis;
-	  padding-right:6%; 
-    -o-text-overflow: ellipsis;
-	}
+  }
+    .line12e3{
+	position: absolute;
+	right:0;
+	width:20%;
+	height:100%;
+  }
   .ainline12c{
 	color:#000000;
-	font-size:11px;
+	font-size:12px;
   }
   .line1 .line13 {
 	position: relative;
@@ -151,27 +157,32 @@
     width: 100%;
     height: 85%;
 	bottom:2%;
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
-	padding-right:6%; 
-    -o-text-overflow: ellipsis;
-  }
-  .line13c1{
+   }
+   .line13c1{
+	
 	left:0;
 	width: 100%;
-	height:11%;
+	height:10.5%;
+  }
+  .line13c2{
+	position: absolute;
+	left:0;
+	width: 80%;
+	height:100%;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	padding-right:6%; 
-    -o-text-overflow: ellipsis;
+  }
+  .line13c3{
+	position: absolute;
+	right:0;
+	width:20%;
+	height:100%;
   }
   .disc{
 	list-style-type: disc;
-    font-size: 11px;
+    font-size: 12px;
 	padding-left:6%;
-	line-height:140%;
   }
   .ainline1{
 	color: #000000;
@@ -224,29 +235,37 @@
     width: 100%;
     height: 80%;
 	bottom:2%;
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
-	padding-right:6%; 
-    -o-text-overflow: ellipsis;
   }
   .line14c1{
 	left:0;
 	width:100%;
 	height:20%;
+  }
+    .line14c1{
+	
+	left:0;
+	width: 100%;
+	height:20%;
+  }
+  .line14c2{
+	position: absolute;
+	left:0;
+	width: 80%;
+	height:100%;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	padding-right:6%; 
-    -o-text-overflow: ellipsis;
+  }
+  .line14c3{
+	position: absolute;
+	right:0;
+	width:20%;
+	height:100%;
   }
   .disc14{
 	list-style-type: disc;
     font-size: 10px;
 	padding-left:6%;
-	white-space:nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
   }
 .carousel-caption {
   position: absolute;
@@ -318,3 +337,4 @@
       margin-left: 1%; } }
 
 /*# sourceMappingURL=line1.css.map */
+
