@@ -382,7 +382,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
         						$query = new WP_Query("posts_per_page=6&category_name=".$cat_name);
         						while($query->have_posts()): $query->the_post();
     						?>
-                <div class="line12e1"><div class="line12e2"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></li></ul></div><div class="line12e3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
+                <div class="line12e1"><div class="line12e2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line12e3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
                 <?php endwhile; wp_reset_query(); ?>
           </div>
         </div>
@@ -397,7 +397,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
         					$query = new WP_Query("posts_per_page=9&category_name=".$cat_name);
         					while($query->have_posts()): $query->the_post();
     					?>
-              <div class="line13c1"><div class="line13c2"><ul class="disc"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></li></ul></div><div class="line13c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
+              <div class="line13c1"><div class="line13c2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line13c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
     			  	<?php endwhile; wp_reset_query(); ?>
     			</div>
         </div>
@@ -412,7 +412,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
         				$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
         				while($query->have_posts()): $query->the_post();
     				?>
-            <div class="line14c1"><div class="line14c2"><ul class="disc14"><li><a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></li></ul></div><div class="line14c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
+            <div class="line14c1"><div class="line14c2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line14c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
     			  <?php endwhile; wp_reset_query(); ?>
           </div>
         </div>
