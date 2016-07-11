@@ -436,7 +436,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             <div class="tab-pane active" id="tabs21-1" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
-                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                     <?php
                         								$cat_name = "活力支部";
                         								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -455,7 +455,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             <div class="tab-pane" id="tabs21-2" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
-                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                         <?php
                           								$cat_name = "魅力团干";
                           								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -474,7 +474,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                             <div class="tab-pane" id="tabs21-3" style="height: 100%">
                                 <div class="tab-pane-content-1"
                                      style="width: 57%;height: 100%;float: left">
-                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 175%;padding-top: 1%;">
+                                    <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                         <?php
                           								$cat_name = "缤纷社团";
                           								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -522,7 +522,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     </div>
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs221-1" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "主题团日";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -536,7 +536,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs221-2" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "四进四信";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -550,7 +550,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs221-3" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青马工程";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -564,7 +564,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs221-4" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "社会实践";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -578,7 +578,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs221-5" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "智惠社区";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -605,7 +605,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     </div>
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs222-1" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "创新创业";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -619,7 +619,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs222-2" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "能力拓展";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -633,7 +633,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs222-3" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               									  $cat_name = "校园文化";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -647,7 +647,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs222-4" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "缤纷社团";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -661,7 +661,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs222-5" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青春三走";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -686,7 +686,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     </div>
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs223-1" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "校长接待日";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -700,7 +700,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs223-2" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "提案反馈";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -714,7 +714,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs223-3" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "出彩东大人";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -739,13 +739,13 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     </div>
                                     <div class="tab-content" id="line22-left-tab-content" style="width: 85.8%;float: right;height: 100%;">
                                         <div class="tab-pane active" id="tabs224-1" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "活力支部";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
-                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left"></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
+                                                <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
                                                 <?php endwhile; wp_reset_query(); ?>
                                             </div>
                                             <div style="width: 36%;height: 100%;float: right">
@@ -753,7 +753,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs224-2" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "学生组织";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
@@ -767,7 +767,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tabs224-3" style="height: 100%">
-                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 175%;padding-top: 0.5%;">
+                                            <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青年教工";
                               										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
