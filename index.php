@@ -228,10 +228,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
             </object>
         </div>
         <nav class="menubar animenu">
-            <button class="animenu__toggle" id="menu_btn" onclick="
-
-            alert("ok")"
-        >
+            <button class="animenu__toggle" id="menu_btn" >
               <span class="animenu__toggle__bar"></span>
               <span class="animenu__toggle__bar"></span>
               <span class="animenu__toggle__bar"></span>
@@ -246,7 +243,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                   <li class="dropdown">
                       <ul class="dropdown-menu top-of-item">
                       </ul>
-                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">东大共青团 </a>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="false">东大共青团 </a>
                       <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
                         <li><a href="#" class="submenucolor">团委简介</a></li>
                         <!-- <li class="divider"></li> -->
@@ -263,7 +260,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                   <li class="dropdown">
                       <ul class="dropdown-menu top-of-item">
                       </ul>
-                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">学生组织 </a>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="false">学生组织 </a>
                       <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
                         <li><a href="#" class="submenucolor">学生会</a></li>
                         <!-- <li class="divider"></li> -->
@@ -279,7 +276,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                   <li class="dropdown">
                       <ul class="dropdown-menu top-of-item">
                       </ul>
-                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="800" data-close-others="false">网上团支部 </a>
+                      <a href="#" class="dropdown-toggle menucolor"  data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="false">网上团支部 </a>
                       <ul class="dropdown-menu animenu__nav__child" id = "navbar_item">
                         <li><a href="#" class="submenucolor">网上团支部</a></li>
                         <!-- <li class="divider"></li> -->

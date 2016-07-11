@@ -98,6 +98,10 @@
         min-height: 0px;
         height: 2%; }
         .header .banner #serarch_form .input-group .form-control {
+          border-top-left-radius: 17px;
+          border-top-right-radius: 17px;
+          border-bottom-right-radius: 17px;
+          border-bottom-left-radius: 17px;
           border-radius: 17px;
           font-size: 112%;
           min-height: 0px;
@@ -122,6 +126,16 @@
     background-color: red;
     color: red;
     position: absolute; }
+
+.dropdown-menu > li > a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #DE0023; }
+
+.dropdown-menu > li > a:focus {
+  color: white;
+  text-decoration: none;
+  background-color: red; }
 
 .dropdown-menu {
   width: 100%;
@@ -178,6 +192,15 @@
     /*min-height: 30%;*/
     height: 4%;
     width: 100%; }
+    .header .banner #serarch_form {
+      float: right;
+      width: 12%;
+      margin-bottom: 0px;
+      margin-left: 40%;
+      margin-right: 1%;
+      margin-top: 5.7%;
+      min-width: 80px;
+      height: 100%; }
 
   .animenu__toggle {
     display: inline-block; }
