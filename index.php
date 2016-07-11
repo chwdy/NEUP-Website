@@ -379,7 +379,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     			<div class="line12e">
                 <?php
         						$cat_name = "先锋头条";
-        						$query = new WP_Query("posts_per_page=6&category_name=".$cat_name);
+        						$query = new WP_Query("posts_per_page=4&category_name=".$cat_name);
         						while($query->have_posts()): $query->the_post();
     						?>
                 <div class="line12e1"><div class="line12e2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line12e3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
@@ -394,7 +394,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     			<div class="line13c">
               <?php
         					$cat_name = "学院团训";
-        					$query = new WP_Query("posts_per_page=9&category_name=".$cat_name);
+        					$query = new WP_Query("posts_per_page=6&category_name=".$cat_name);
         					while($query->have_posts()): $query->the_post();
     					?>
               <div class="line13c1"><div class="line13c2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line13c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
@@ -409,7 +409,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
     			<div class="line14c">
             <?php
         				$cat_name = "通知公告";
-        				$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
+        				$query = new WP_Query("posts_per_page=3&category_name=".$cat_name);
         				while($query->have_posts()): $query->the_post();
     				?>
             <div class="line14c1"><div class="line14c2"><p style="padding-left:3%;">>&nbsp;<a href="<?php the_permalink(); ?>" target="_blank" class="ainline1"><?php the_title(); ?></a></p></div><div class="line14c3"><span style="float: right"><?php the_time("m-d"); ?></span></div></div>
@@ -439,7 +439,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                     <?php
                         								$cat_name = "活力支部";
-                        								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                        								$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                         								while($query->have_posts()) : $query->the_post();
                     									?>
                                       <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -458,7 +458,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                         <?php
                           								$cat_name = "魅力团干";
-                          								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                          								$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                           								while($query->have_posts()) : $query->the_post();
                       									?>
                                         <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -477,7 +477,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                     <ul style="padding-left: 2%;font-size:smaller;line-height: 250%;padding-top: 1%;">
                                         <?php
                           								$cat_name = "缤纷社团";
-                          								$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                          								$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                           								while($query->have_posts()) : $query->the_post();
                       									?>
                                         <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 75%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -525,7 +525,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "主题团日";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -539,7 +539,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "四进四信";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -553,7 +553,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青马工程";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -567,7 +567,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "社会实践";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -581,7 +581,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "智惠社区";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -608,7 +608,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "创新创业";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -622,7 +622,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "能力拓展";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -636,7 +636,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               									  $cat_name = "校园文化";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -650,7 +650,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "缤纷社团";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -664,7 +664,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青春三走";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -689,7 +689,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "校长接待日";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -703,7 +703,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "提案反馈";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -717,7 +717,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "出彩东大人";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -742,7 +742,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "活力支部";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:4%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -756,7 +756,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "学生组织";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
@@ -770,7 +770,7 @@ $link3 = $wpdb->get_var("SELECT `option_value` FROM  $wpdb->options  WHERE optio
                                             <div style="width: 63%;height: 100%;float: left;font-size:smaller;line-height: 250%;padding-top: 0.5%;">
                                                 <?php
                               										$cat_name = "青年教工";
-                              										$query = new WP_Query("posts_per_page=7&category_name=".$cat_name);
+                              										$query = new WP_Query("posts_per_page=5&category_name=".$cat_name);
                               										while($query->have_posts()) : $query->the_post();
                           											?>
                                                 <a href="<?php the_permalink(); ?>" target="_blank"><span style="width: 80%;float: left"><p style="margin: 0;padding-right:2%;float: left">></p><?php the_title(); ?></span></a><p style="float: right;margin:0;padding-right: 5%"><?php the_time("m-d"); ?></p>
