@@ -34,10 +34,11 @@
     display: block; }
   .line12a {
 	font-weight:bold;
+	font-size: 15px;
 	color:#F00;
     position: absolute;
     left: 6%;
-    top: 1%;
+    top: 0.5%;
     width: 70%;
     height: 9%;
 	}
@@ -84,14 +85,14 @@
     width: 100%;
     height:52%;
 	bottom:2%;
-	}
-    .line12e1{
-	
+	font-size: 12px;
+  }
+  .line12e1{
 	left:0;
 	width: 100%;
-	height:16.5%;
+	height:25%;
   }
-    .line12e2{
+  .line12e2{
 	position: absolute;
 	left:0;
 	width: 80%;
@@ -100,7 +101,7 @@
 	overflow:hidden;
 	text-overflow:ellipsis;
   }
-    .line12e3{
+  .line12e3{
 	position: absolute;
 	right:0;
 	width:20%;
@@ -108,7 +109,7 @@
   }
   .ainline12c{
 	color:#000000;
-	font-size:12px;
+	
   }
   .line1 .line13 {
 	position: relative;
@@ -120,10 +121,11 @@
     display: block; }
   .line13a{
 	font-weight:bold;
+	font-size: 15px;
 	color:#F00;
     position: absolute;
     left: 6%;
-    top: 1%;
+    top: 0.5%;
     width: 70%;
     height: 9%;
   }	
@@ -157,12 +159,12 @@
     width: 100%;
     height: 85%;
 	bottom:2%;
-   }
-   .line13c1{
-	
+	font-size: 12px;
+  }
+  .line13c1{
 	left:0;
 	width: 100%;
-	height:10.5%;
+	height:17%;
   }
   .line13c2{
 	position: absolute;
@@ -179,11 +181,6 @@
 	width:20%;
 	height:100%;
   }
-  .disc{
-	list-style-type: disc;
-    font-size: 12px;
-	padding-left:6%;
-  }
   .ainline1{
 	color: #000000;
   }
@@ -197,11 +194,12 @@
     width: 19.3%;
     height: 63.63636%; }
   .line14a{
+	font-size:15px;
 	font-weight:bold;
 	color:#F00;
     position: absolute;
-    left: 7%;
-    top: 1%;
+    left: 6.5%;
+    top: 0.5%;
     width: 70%;
     height:5%;
   }
@@ -217,7 +215,7 @@
 	left:3%;
 	top:3%;
 	width:1%;
-	height:8%;
+	height:10%;
 	background-color:#FF0000;
   }
   .line14b{
@@ -231,26 +229,21 @@
   .line14c{
 	position: absolute;
     left: 0;
-    bottom: 0;
+	top:25%;
     width: 100%;
     height: 80%;
 	bottom:2%;
+	font-size:12px;
   }
-  .line14c1{
-	left:0;
-	width:100%;
-	height:20%;
-  }
-    .line14c1{
-	
+   .line14c1{
 	left:0;
 	width: 100%;
-	height:20%;
+	height:36%;
   }
   .line14c2{
 	position: absolute;
 	left:0;
-	width: 80%;
+	width: 75%;
 	height:100%;
 	white-space:nowrap;
 	overflow:hidden;
@@ -259,14 +252,10 @@
   .line14c3{
 	position: absolute;
 	right:0;
-	width:20%;
+	width:25%;
 	height:100%;
   }
-  .disc14{
-	list-style-type: disc;
-    font-size: 10px;
-	padding-left:6%;
-  }
+
 .carousel-caption {
   position: absolute;
   bottom: 0.5%;
@@ -337,4 +326,3 @@
       margin-left: 1%; } }
 
 /*# sourceMappingURL=line1.css.map */
-
