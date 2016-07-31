@@ -1,27 +1,33 @@
 .footer {
   border: solid 1px red;
-  height: 12%;
+  height: 13%;
   width: 100%;
   background-color: #de0023;
+  margin-top: 0.6%;
+  padding-bottom: 3%;
   zoom: 1; }
 
 .footer-list {
   margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-align: center;
+  cursor: default;
   padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  padding-left: 10px; }
+  padding-bottom: 0%; }
 
 .footer-link {
   color: #FFFFFF;
   display: inline;
   font-size: 15px;
-  padding-bottom: 4%;
+  padding-bottom: 0%;
   padding-top: 8%;
   text-align: center;
-  width: 70%;
   list-style: none;
-  margin: auto; }
+  margin-bottom: 0;
+  margin-top: 0; }
   .footer-link a:link {
     color: #fff; }
   .footer-link a:visited {
@@ -33,13 +39,18 @@
 
 .footer-info {
   text-align: center;
-  padding-top: 3%;
+  padding-top: 0%;
+  margin-bottom: 0;
   padding-bottom: 0;
-  font-size: 5px;
-  color: white;
-  width: auto;
-  display: inline;
-  line-height: 60%; }
+  display: inline; }
+  .footer-info .text {
+    line-height: 60%;
+    color: white;
+    transform: scale(0.83, 0.83);
+    -webkit-transform: scale(0.83, 0.83);
+    -moz-transform: scale(0.83, 0.83);
+    -o-transform: scale(0.83, 0.83);
+    font-size: 12px; }
   .footer-info a:link {
     color: #fff; }
   .footer-info a:visited {
@@ -50,6 +61,7 @@
     color: #fff; }
 
 .footer-sns {
+  margin-top: 0;
   text-align: center;
   margin-bottom: 1%;
   color: white;
@@ -71,6 +83,10 @@
     display: inline-block;
     margin-top: 0;
     text-align: center;
+    transform: scale(0.83, 0.83);
+    -webkit-transform: scale(0.83, 0.83);
+    -moz-transform: scale(0.83, 0.83);
+    -o-transform: scale(0.83, 0.83);
     font-size: 12px;
     color: #fff; }
   .footer-sns .weixin .content {
@@ -79,41 +95,45 @@
     margin: 0;
     padding: 0; }
     .footer-sns .weixin .content .img {
+      position: relative;
+      left: 0.6%;
       display: inline-block;
       background: url("../images/weixin_icn.png") no-repeat;
-      background-size: 25px 25px;
-      height: 25px;
-      width: 25px; }
+      background-size: 30px 30px;
+      height: 30px;
+      width: 30px; }
     .footer-sns .weixin .content .wechat-qrcode {
       display: inline-block;
       background: url("../images/wechat-qrcode.png") no-repeat;
-      background-size: 25px 25px;
-      height: 25px;
-      width: 25px; }
+      background-size: 30px 30px;
+      height: 30px;
+      width: 30px; }
   .footer-sns .weibo .content {
     list-style: none;
     display: inline;
     margin-top: 0;
-    margin-left: 3%;
-    margin-right: 3%;
     padding: 0; }
     .footer-sns .weibo .content .img {
+      position: relative;
+      left: 0.6%;
       display: inline-block;
       background: url("../images/weibo_icn.png") no-repeat;
-      background-size: 25px 25px;
-      height: 25px;
-      width: 25px; }
+      background-size: 30px 30px;
+      height: 30px;
+      width: 30px; }
   .footer-sns .tx-weibo .content {
     list-style: none;
     display: inline;
     margin: 0;
     padding: 0; }
     .footer-sns .tx-weibo .content .img {
+      position: relative;
+      left: 0.6%;
       display: inline-block;
       background: url("../images/tx_weibo_icn.png") no-repeat;
-      background-size: 25px 25px;
-      height: 25px;
-      width: 25px; }
+      background-size: 30px 30px;
+      height: 30px;
+      width: 30px; }
 
 @media only screen and (max-width: 480px) {
   .footer {

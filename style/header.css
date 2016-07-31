@@ -130,7 +130,7 @@
 .dropdown-menu > li > a:hover {
   color: white;
   text-decoration: none;
-  background-color: #DE0023; }
+  background-color: #FF828C; }
 
 .dropdown-menu > li > a:focus {
   color: white;
@@ -164,6 +164,7 @@
   font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
 
 .submenucolor:hover {
+  color: white;
   font-size: 112%;
   font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
 

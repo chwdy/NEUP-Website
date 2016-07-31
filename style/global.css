@@ -36,61 +36,19 @@ ul, button {
 *, *:after, *:before {
   box-sizing: border-box; }
 
+html {
+  width: 1900px;
+  height: 1040px; }
+
 @media screen {
   body {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
     /*
       REMEMBER update header.css first
       because global include them
-    */ } }
-  @media screen and (min-width: 1367px) and (max-width: 1899px) {
-    body {
-      overflow-x: hidden;
-      border: solid 1px blue;
-      padding-top: 0;
-      width: 90%;
-      margin-left: 5%;
-      overflow: auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      height: 850px; } }
-  @media screen and (min-width: 1900px) {
-    body {
-      overflow-x: hidden;
-      border: solid 1px blue;
-      padding-top: 0;
-      width: 90%;
-      margin-left: 5%;
-      overflow: auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      height: 980px; } }
-  @media screen and (max-width: 1366px) {
-    body {
-      overflow-x: hidden;
-      border: solid 1px blue;
-      padding-top: 0;
-      width: 90%;
-      margin-left: 5%;
-      overflow: auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      height: 700px; } }
-  @media screen and (max-width: 480px) {
-    body {
-      overflow-x: hidden;
-      border: solid 1px blue;
-      padding-top: 0;
-      width: 90%;
-      margin-left: 5%;
-      overflow: auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      height: 2500px; } }
-@media screen {
+    */ }
     body .animenu__toggle {
       display: none;
       cursor: pointer;
@@ -216,7 +174,7 @@ ul, button {
     body .dropdown-menu > li > a:hover {
       color: white;
       text-decoration: none;
-      background-color: #DE0023; }
+      background-color: #FF828C; }
     body .dropdown-menu > li > a:focus {
       color: white;
       text-decoration: none;
@@ -245,6 +203,7 @@ ul, button {
       font-size: 112%;
       font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
     body .submenucolor:hover {
+      color: white;
       font-size: 112%;
       font-family: Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,"MicrosoftJhengHei",STHeiti,MingLiu, Serif; }
     body .nav .open > a, body .nav .open > a:focus, body .nav .open > a:hover {

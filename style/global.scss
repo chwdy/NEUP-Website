@@ -63,37 +63,54 @@ $value: 1.5;
   box-sizing: border-box;
 }
 
+html{
+    //1920x1080
+    width: 1900px;
+    height: 1040px;
+}
+
 @media #{$media} {
 
     body{
-        @media (min-width: 1367px) and (max-width: 1899px){
-            //1600 is in it!!!
-            @include body;
-            height: 850px;
-            // background-color: red;
+        //     @media (min-width: 1367px) and (max-width: 1899px){
+    //         //1920x1080
+    //         @include body;
+    //         height: 1000px;
+    //         //background-color: red;
+       //
+    //     }
+       //
+    //     @media (min-width: 1900px){
+       //
+    //         @include body;
+    //         height: 1000px;
+    //     }
+    //     @media (max-width: 1366px){
+    //         //laptop
+    //         @include body;
+    //         height: 700px;
+    //         //768-60
+    //     }
+    //      @media (max-device-width: 481px){
+    //         //laptop
+    //         @include body;
+    //         width: 480px;
+    //         height: 2600px;
+    //         //background-color: blue;
+       //
+    //     }
+    //     @media (max-device-width:360px){
+    //        //laptop
+    //        @include body;
+    //        width: 360px;
+    //        height: 2600px;
+    //        //background-color: blue;
+       //
+    //    }
 
-        }
-
-        @media (min-width: 1900px){
-
-            @include body;
-            height: 980px;
-            //1920 is in here
-            //  background-color: blue;
-        }
-        @media (max-width: 1366px){
-            //laptop
-            @include body;
-            height: 700px;
-            //768-60
-        }
-         @media (max-width: 480px){
-            //laptop
-            @include body;
-            height: 2500px;
-            //background-color: blue;
-
-        }
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 100%;
             @import "header.scss";
             // @import "line1.css";
             // @import "line2.css";
